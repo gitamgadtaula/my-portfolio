@@ -70,29 +70,39 @@
             style="margin-top:20px;"
           >
             <el-col :xl="2" :lg="2" :md="2">
-              <div class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </div>
+              <a href="https://fb.com/giittam">
+                <div class="social-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </a>
             </el-col>
             <el-col :xl="2" :lg="2" :md="2">
-              <div class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </div>
+              <a href="https://twitter.com/gitamgadtaula">
+                <div class="social-icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+              </a>
             </el-col>
             <el-col :xl="2" :lg="2" :md="2">
-              <div class="social-icon">
-                <i class="fab fa-instagram"></i>
-              </div>
+              <a href="https://instagram.com/gitamgadtaula">
+                <div class="social-icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </a>
             </el-col>
             <el-col :xl="2" :lg="2" :md="2">
-              <div class="social-icon">
-                <i class="fab fa-quora"></i>
-              </div>
+              <a href="https://quora.com/gitamgadtaula"
+                ><div class="social-icon">
+                  <i class="fab fa-quora"></i>
+                </div>
+              </a>
             </el-col>
             <el-col :xl="2" :lg="2" :md="2">
-              <div class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </div>
+              <a href="https://www.linkedin.com/in/gitamgadtaula/">
+                <div class="social-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </a>
             </el-col>
           </el-row>
         </header>
@@ -192,13 +202,12 @@
     </div>
     <section class="skill" id="skill">
       <h1 class="header-h1">MY SKILLS <i class="fas fa-tools"></i></h1>
-      <div style="margin-top:20px;">
-        I am a fresh computer science graduate who has just stepped a foot in
-        the real competetive IT world. Eventhough I'm a newbie in this
-        professional IT field, the way I have shaped myself during my acadameic
+      <div style="margin-top:20px;color:white;">
+        I am a fresh computer science graduate who has just kick-started his
+        career in the professional IT world. But eventhough I'm a newbie in this
+        competetive field, the way I have shaped myself during my acadameic
         spell and then the internship later has me helped a lot to quickly grasp
-        the new things floating around the air. So I consider myself a
-        progressive programmer since every new day is a learning day.
+        the new things floating around the air.
         <el-row type="flex" justify="space-between" style="margin-bottom:10px;">
           <el-col :span="11">
             <p class="skill-name">HTML5</p>
@@ -312,18 +321,19 @@
         />
       </section>
     </div>
-    <el-backtop
-      target=".page-component__scroll .el-scrollbar__wrap"
-    ></el-backtop>
   </div>
 </template>
-
+<script
+  src="https://kit.fontawesome.com/991c42112a.js"
+  crossorigin="anonymous"
+></script>
 <script>
-import "element-ui/lib/theme-chalk/display.css";
 const img1 = require("./assets/football2.jpg");
 const img2 = require("./assets/guitar.jpg");
 const img3 = require("./assets/travel1.jpg");
-// const img4 = require("./assets/wallpaper.jpeg");
+import "element-ui/lib/theme-chalk/display.css";
+require("./assets/style.css");
+
 export default {
   name: "App",
   components: {},
@@ -353,18 +363,3 @@ export default {
   },
 };
 </script>
-
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@import url("./assets/style.css");
-
-.footer {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: white;
-  color: black;
-}
-</style>
