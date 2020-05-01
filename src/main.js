@@ -1,15 +1,17 @@
 import Vue from "vue";
 import App from "./App.vue";
-import ElementUI from "element-ui";
-import "element-ui/lib/theme-chalk/index.css";
 import VueParticles from "vue-particles";
 import Typewriter from "vue-typewriter";
+import "element-ui/lib/theme-chalk/index.css";
 import "animate.css";
-
-Vue.use(Typewriter);
-
-Vue.use(VueParticles);
+import "./assets/style.css";
+// import { Row, Col, Divider } from "element-ui";
+import ElementUI from "element-ui";
 Vue.use(ElementUI);
+Vue.use(Typewriter);
+Vue.use(VueParticles);
+
+// Vue.use(Row, Col, Divider);
 
 Vue.config.productionTip = false;
 

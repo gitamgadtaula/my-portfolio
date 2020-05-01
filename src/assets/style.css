@@ -123,13 +123,71 @@ header {
   padding-bottom: 5%;
   color: white;
   background-color: #00b0dc;
+  background: linear-gradient(0deg, #008459 48%, #00b0dc 87%);
+}
+.block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  /* min-width: 60%; */
+}
+@media only screen and (max-width: 680px) {
+  .block {
+    /* background-color: lightblue; */
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .work {
+    /* background-color: lightblue; */
+    /* max-width: 100%; */
+    margin: 0%;
+    padding-right: 15px;
+  }
+}
+.bubble-text {
+  margin: 0px;
+  padding: 0px;
+}
+.bubble {
+  position: relative;
+  background: #293c3d;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  box-shadow: 9px 6px 4px -2px #0b0b0b;
+  text-align: center;
+
+  border-radius: 10px;
+
+  padding: 5px;
+
+  /* transform: rotate(3deg); */
+}
+
+.bubble:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-width: 0 21px 23px 0;
+  border-color: transparent #293c3d transparent transparent;
+  top: 30%;
+  left: -21px;
+  margin-top: -11.5px;
 }
 .skill {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 4%;
   padding-bottom: 4%;
-  background-color: black;
+  background-color: #293c3d;
+  /* background: linear-gradient(0deg, #0d0d0e 48%, #000000 87%);
+   */
+  /* background: linear-gradient(0deg, #1bbe88 48%, #166c81 87%); */
   background-attachment: fixed;
   background-clip: padding-box;
   background-repeat: no-repeat;
@@ -178,11 +236,11 @@ header {
 }
 
 .el-carousel__item:nth-child(2n) {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .el-carousel__item:nth-child(2n + 1) {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 .el-carousel__item {
   position: relative;
@@ -193,6 +251,13 @@ header {
   right: 0px;
   background-color: white;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 100;
+}
+.c-desc {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 100;
+  padding: 5px;
 }
 
 /* Mouse scroll down */

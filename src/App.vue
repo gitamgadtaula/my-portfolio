@@ -4,36 +4,34 @@
   <div id="app">
     <section class="particle">
       <vue-particles color="#deaaae" shapeType="cirle"></vue-particles>
+      <nav style="background-color:#332651;">
+        <el-row type="flex" justify="space-between" :gutter="12">
+          <el-col :span="3">
+            <span class="logo">
+              <img width="80" src="@/assets/gitam.png" />
+            </span>
+          </el-col>
+          <!-- Right Nav Bar -->
+          <el-col>
+            <el-row>
+              <el-col :span="6">
+                <a href="#">Home</a>
+              </el-col>
+              <el-col :span="6">
+                <a href="#about">About me</a>
+              </el-col>
+              <el-col :span="6">
+                <a href="#skill">My skills</a>
+              </el-col>
+              <el-col :span="6">
+                <a href="#interest">Interests</a>
+              </el-col>
+            </el-row>
+          </el-col>
+        </el-row>
+      </nav>
+
       <div id="app-container">
-        <nav>
-          <el-row type="flex" justify="space-between">
-            <el-col :span="3">
-              <span class="logo">
-                <img
-                  width="20"
-                  src="https://www.stickpng.com/assets/images/5847f9cbcef1014c0b5e48c8.png"
-                />
-              </span>
-            </el-col>
-            <!-- Right Nav Bar -->
-            <el-col>
-              <el-row type="flex" justify="end">
-                <el-col :span="5">
-                  <a href="#">Home</a>
-                </el-col>
-                <el-col :span="5">
-                  <a href="#about">About me</a>
-                </el-col>
-                <el-col :span="5">
-                  <a href="#skill">My skills</a>
-                </el-col>
-                <el-col :span="5">
-                  <a href="#interest">Interests</a>
-                </el-col>
-              </el-row>
-            </el-col>
-          </el-row>
-        </nav>
         <header>
           <h1 class="greet">Hello world !</h1>
           <el-row type="flex" justify="center">
@@ -91,8 +89,8 @@
               </a>
             </el-col>
             <el-col :xl="2" :lg="2" :md="2">
-              <a href="https://quora.com/gitamgadtaula"
-                ><div class="social-icon">
+              <a href="https://quora.com/gitamgadtaula">
+                <div class="social-icon">
                   <i class="fab fa-quora"></i>
                 </div>
               </a>
@@ -115,28 +113,23 @@
     <div style="background-color:#00b0dc ;">
       <section class="main hidden-sm-and-down" id="about">
         <el-row type="flex" justify="space-between" direction="column">
-          <el-col :span="9" class="">
+          <el-col :span="9" class>
             <img src="@/assets/me.jpeg" class="main-img" />
           </el-col>
           <el-col :span="15">
-            <h1 class="header-h1" style="color:#111110; ">
-              About Myself
-            </h1>
+            <h1 class="header-h1" style="color:#111110; ">About Myself</h1>
             <h2 style="margin-top:10px;">
               I'm Gitam Gadtaula.
-
               <p style="font-size:18px; font-weight:400;">
                 A simple, creative and a fun-loving person who always likes to
                 create things out of imagination.
               </p>
               <p style="font-size:18px; font-weight:400;">
-                I am a fresh computer science graduate who has just stepped a
-                foot in the real competetive IT world. Eventhough I'm a newbie
-                in this professional IT field, the way I have shaped myself
-                during my acadameic spell and then the internship later has me
-                helped a lot to quickly grasp the new things floating around the
-                air. So I consider myself a progressive programmer since every
-                new day is a learning day.
+                I am among just another any sapiens who has some purpose and
+                ambition in their life. I am cheerful when the sky is full of
+                thunder and tearful at the falling of stars. Sometimes, I look
+                at people and I make myself try and feel them as more than just
+                a random person walking by.
               </p>
             </h2>
           </el-col>
@@ -183,25 +176,66 @@
             class="animated bounceInRight"
             style="text-align:left;"
           >
-            <h1>Education <i class="fas fa-university"></i></h1>
-            <h3>Bachleor in Computer science</h3>
+            <h1>
+              Education
+              <i class="fas fa-university"></i>
+            </h1>
+            <h3>
+              Bachleor in Computer science <i class="fas fa-graduation-cap"></i>
+            </h3>
             <h2>Kathmandu University</h2>
           </el-col>
 
           <el-col
-            span="12"
+            :span="12"
             class="animated bounceInLeft"
             style="text-align:right;"
           >
             <h1><i class="far fa-building"></i> Work</h1>
-            <h3>Web Developer</h3>
+            <h3><i class="fas fa-terminal"></i> Web Developer</h3>
             <h2>Rasello Nepal</h2>
           </el-col>
         </el-row>
+        <!-- <div class="block">
+          <el-timeline>
+            <el-timeline-item timestamp placement="top" style="color:white;">
+              <div class="bubble bubble-text">
+                <h3>
+                  Education
+                  <i class="fas fa-university"></i>
+                </h3>
+                <br />
+                <h4>
+                  <i class="fas fa-graduation-cap"></i>
+                  Kathmandu University
+                </h4>
+                <p style="margin-top:0px;">Computer Science</p>
+              </div>
+            </el-timeline-item>
+            <el-timeline-item timestamp placement="top" style="color:white;">
+              <div class="bubble bubble-text">
+                <h3>
+                  Work
+                  <i class="fas fa-university"></i>
+                </h3>
+                <br />
+                <h4>
+                  <i class="fas fa-terminal"></i>
+                  Web Developer
+                </h4>
+                <p style="margin-top:0px;">Rasello Nepal</p>
+              </div>
+            </el-timeline-item>
+            <el-timeline></el-timeline>
+          </el-timeline>
+        </div> -->
       </section>
     </div>
     <section class="skill" id="skill">
-      <h1 class="header-h1">MY SKILLS <i class="fas fa-tools"></i></h1>
+      <h1 class="header-h1">
+        MY SKILLS
+        <i class="fas fa-tools"></i>
+      </h1>
       <div style="margin-top:20px;color:white;">
         I am a fresh computer science graduate who has just kick-started his
         career in the professional IT world. But eventhough I'm a newbie in this
@@ -268,47 +302,56 @@
       </div>
     </section>
 
-    <div style="background-color:">
-      <section class="interest" style="" id="interest">
+    <div style="">
+      <section class="interest" id="interest">
         <h1 class="header-h1" style="margin-bottom:10px;">
-          MY INTERESTS <i class="fas fa-rocket"></i>
+          MY INTERESTS
+          <i class="fas fa-rocket"></i>
         </h1>
-        <el-carousel
-          :interval="4000"
-          type="card"
-          height="540px"
-          class="hidden-sm-and-down"
+        <carousel-3d
+          style="border:none;"
+          :width="620"
+          :height="560"
+          :autoplay="true"
+          :autoplay-timeout="5000"
+          :controls-visible="true"
         >
-          <el-carousel-item v-for="item in assets" :key="item">
-            <img :src="item.img" width="100%" />
-            <h3 class="c-caption">{{ item.caption }}</h3>
-            <h3 class="c-desc">{{ item.desc }}</h3>
-          </el-carousel-item>
-        </el-carousel>
-
-        <el-carousel
-          :interval="4000"
-          type="card"
-          height="300px"
-          class="hidden-md-and-up"
-        >
-          <el-carousel-item v-for="item in assets" :key="item">
-            <img :src="item.img" width="100%" />
-            <h3 class="c-caption">{{ item.caption }}</h3>
-            <h3 class="c-desc" style="font-size:12px;">{{ item.desc }}</h3>
-          </el-carousel-item>
-        </el-carousel>
+          <slide v-for="(slide, i) in assets" :index="i" :key="i">
+            <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
+              <img
+                :data-index="index"
+                :class="{
+                  current: isCurrent,
+                  onLeft: leftIndex >= 0,
+                  onRight: rightIndex >= 0,
+                }"
+                :src="slide.img"
+              />
+              <h3 class="c-caption">{{ slide.caption }}</h3>
+              <h3 class="c-desc">
+                {{ slide.desc }}
+              </h3>
+            </template>
+          </slide>
+        </carousel-3d>
       </section>
       <section class="footer">
-        Made with <i class="fas fa-heart" style="color:red;"></i> in Quarantine.
-        <p><i class="fas fa-envelope"></i> gitamgadtaula@gmail.com</p>
+        Made with
+        <i class="fas fa-heart" style="color:red;"></i>
+        in Quarantine.
+        <p>
+          <i class="fas fa-envelope"></i>
+          gitamgadtaula@gmail.com
+        </p>
         <p><i class="fas fa-map-marker-alt"></i> Kathmandu Nepal</p>
         <div
           style="max-width:50%;margin-left:auto;
           margin-right:auto;display:block;"
         >
           <el-divider>
-            <el-col :span="3"><i class="el-icon-star-on"></i> </el-col>
+            <el-col :span="3">
+              <i class="el-icon-star-on"></i>
+            </el-col>
           </el-divider>
         </div>
         <h3>Powered by</h3>
@@ -323,10 +366,8 @@
     </div>
   </div>
 </template>
-<script
-  src="https://kit.fontawesome.com/991c42112a.js"
-  crossorigin="anonymous"
-></script>
+<style scoped></style>
+
 <script>
 const img1 = require("./assets/football2.jpg");
 const img2 = require("./assets/guitar.jpg");
@@ -334,9 +375,12 @@ const img3 = require("./assets/travel1.jpg");
 import "element-ui/lib/theme-chalk/display.css";
 require("./assets/style.css");
 
+import { Carousel3d, Slide } from "vue-carousel-3d";
+// import { Row, Col} from "element-ui";
+
 export default {
   name: "App",
-  components: {},
+  components: { Carousel3d, Slide },
   data() {
     return {
       assets: [
