@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -44,6 +44,7 @@ canvas {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   padding-bottom: 100px;
+  padding-top: 30px;
 }
 .logo {
   font-size: 12px;
@@ -53,7 +54,17 @@ canvas {
 nav {
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 100%;
+  position: fixed;
   top: 0;
+  left: 0;
+  z-index: 10;
+  background: linear-gradient(
+    90deg,
+    rgb(37, 25, 64) 0%,
+    rgb(42, 11, 53) 50%,
+    rgb(30, 25, 66) 100%
+  );
 }
 header {
   margin-top: 140px;
@@ -74,9 +85,11 @@ header {
 .header-h1 {
   /* font-family: "Raleway", sans-serif; */
   font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  color: white;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1px;
   font-weight: 400;
+  /* text-transform: uppercase; */
 }
 .greet {
   font-family: "Raleway", sans-serif;
@@ -122,8 +135,9 @@ header {
   padding-top: 5%;
   padding-bottom: 5%;
   color: white;
-  background-color: #00b0dc;
-  background: linear-gradient(0deg, #008459 48%, #00b0dc 87%);
+  background-color: #000000;
+  /* background: linear-gradient(0deg, #008459 48%, #00b0dc 87%); */
+  /* background: linear-gradient(20deg, #270f38 48%, #00b0dc 87%); */
 }
 .block {
   display: block;
@@ -184,14 +198,9 @@ header {
   padding-right: 5%;
   padding-top: 4%;
   padding-bottom: 4%;
-  background-color: #293c3d;
-  /* background: linear-gradient(0deg, #0d0d0e 48%, #000000 87%);
-   */
-  /* background: linear-gradient(0deg, #1bbe88 48%, #166c81 87%); */
+  background-color: #060707;
+  background: linear-gradient(20deg, #270f38 48%, #00b0dc 87%);
   background-attachment: fixed;
-  background-clip: padding-box;
-  background-repeat: no-repeat;
-  background-position: center;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -221,6 +230,7 @@ header {
   padding-bottom: 5%;
   background: rgb(0, 176, 220);
   background: linear-gradient(0deg, #00b0dc 48%, #008459 87%);
+  background-attachment: fixed;
   color: black;
   /* text-align: left; */
   font-weight: 400;

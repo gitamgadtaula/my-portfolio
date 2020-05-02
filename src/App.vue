@@ -2,34 +2,32 @@
 
 <template>
   <div id="app">
-    <section class="particle">
-      <vue-particles color="#deaaae" shapeType="cirle"></vue-particles>
-      <nav style="background-color:#332651;">
-        <el-row type="flex" justify="space-between" :gutter="12">
-          <el-col :span="3">
-            <span class="logo">
-              <img width="80" src="@/assets/gitam.png" />
-            </span>
+    <div style="display:inline-block;">
+      <nav style="width:100%;margin:0px;position:fixed;">
+        <el-row type="flex" justify="space-evenly" :gutter="12">
+          <el-col :span="1"> </el-col>
+          <span class="logo" float="left">
+            <img width="40" src="@/assets/gitam.png" />
+          </span>
+
+          <el-col :span="5" :offset="5">
+            <a href="#"> <i class="fas fa-home"></i> Home</a>
           </el-col>
-          <!-- Right Nav Bar -->
-          <el-col>
-            <el-row>
-              <el-col :span="6">
-                <a href="#">Home</a>
-              </el-col>
-              <el-col :span="6">
-                <a href="#about">About me</a>
-              </el-col>
-              <el-col :span="6">
-                <a href="#skill">My skills</a>
-              </el-col>
-              <el-col :span="6">
-                <a href="#interest">Interests</a>
-              </el-col>
-            </el-row>
+
+          <el-col :span="5">
+            <a href="#about"> <i class="fas fa-user-alt"></i> About me</a>
+          </el-col>
+          <el-col :span="5">
+            <a href="#skill"> <i class="fas fa-tools"></i> My skills</a>
+          </el-col>
+          <el-col :span="5">
+            <a href="#interest"> <i class="fas fa-rocket"></i> Interests</a>
           </el-col>
         </el-row>
       </nav>
+    </div>
+    <section class="particle">
+      <vue-particles color="#deaaae" shapeType="cirle"></vue-particles>
 
       <div id="app-container">
         <header>
@@ -38,7 +36,7 @@
             <img src="@/assets/3.jpeg" class="header-img" />
           </el-row>
           <el-row type="flex" justify="center">
-            <el-col>
+            <el-col :span="24">
               <h1 class="header-h1">I'm Gitam</h1>
             </el-col>
           </el-row>
@@ -89,7 +87,7 @@
               </a>
             </el-col>
             <el-col :xl="2" :lg="2" :md="2">
-              <a href="https://quora.com/gitamgadtaula">
+              <a href="https://www.quora.com/profile/Gitam-Gadtaula">
                 <div class="social-icon">
                   <i class="fab fa-quora"></i>
                 </div>
@@ -110,7 +108,7 @@
       </div>
     </section>
 
-    <div style="background-color:#00b0dc ;">
+    <div style="background-color:black;">
       <section class="main hidden-sm-and-down" id="about">
         <el-row type="flex" justify="space-between" direction="column">
           <el-col :span="9" class>
@@ -180,9 +178,7 @@
               Education
               <i class="fas fa-university"></i>
             </h1>
-            <h3>
-              Bachleor in Computer science <i class="fas fa-graduation-cap"></i>
-            </h3>
+            <h3>Computer science <i class="fas fa-graduation-cap"></i></h3>
             <h2>Kathmandu University</h2>
           </el-col>
 
