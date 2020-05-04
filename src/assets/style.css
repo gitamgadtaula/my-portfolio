@@ -7,6 +7,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  scroll-behavior: smooth;
 }
 #app-container {
   padding-right: 5%;
@@ -53,7 +54,7 @@ canvas {
 }
 nav {
   padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   width: 100%;
   position: fixed;
   top: 0;
@@ -222,6 +223,13 @@ header {
   padding: 0px;
   margin: 4px;
 }
+.skill-desc {
+  margin-bottom: 20px;
+  color: #fff;
+  /* background-color: #e9f0f2; */
+  /* padding: 10px; */
+  /* border-radius: 4px; */
+}
 
 .interest {
   padding-left: 5%;
@@ -237,24 +245,7 @@ header {
   border-bottom-left-radius: 50% 6%;
   border-bottom-right-radius: 50% 6%;
 }
-.el-carousel__item h3 {
-  color: #111110;
-  margin: 0;
-  padding: 0px 10px 0px 10px;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 100;
-}
 
-.el-carousel__item:nth-child(2n) {
-  background-color: #ffffff;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #ffffff;
-}
-.el-carousel__item {
-  position: relative;
-}
 .c-caption {
   position: absolute;
   top: 0px;
@@ -263,6 +254,7 @@ header {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   font-family: "Rajdhani", sans-serif;
   font-weight: 100;
+  padding-left: 5px;
 }
 .c-desc {
   font-family: "Rajdhani", sans-serif;
@@ -315,4 +307,42 @@ header {
   padding-bottom: 5%;
   background-color: white;
   color: black;
+}
+
+[v-cloak] > * {
+  display: none;
+}
+[v-cloak]::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
