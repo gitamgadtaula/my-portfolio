@@ -1,1 +1,1 @@
-mock 1 - remote
+mock 1 - local
