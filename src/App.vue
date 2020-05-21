@@ -5,34 +5,34 @@
 			<el-row type="flex" justify="space-evenly" :gutter="12">
 				<el-col :span="1"></el-col>
 				<span class="logo" float="left">
-					<img width="40" src="@/assets/gitam.png" />
+					<img width="30" src="@/assets/gitam.png" />
 				</span>
 
 				<el-col :span="5" :offset="5">
 					<a href="#" class="nav-link">
 						<font-awesome-icon icon="home" />
-						<span>&nbsp; Home</span>
+						<span>&nbsp;Home&nbsp;</span>
 					</a>
 				</el-col>
 
 				<el-col :span="5">
 					<a href="#about" class="nav-link">
-						<font-awesome-icon icon="user-alt" />About me
+						<font-awesome-icon icon="user-alt" />&nbsp;About me
 					</a>
 				</el-col>
 				<el-col :span="5">
 					<a href="#skill" class="nav-link">
-						<font-awesome-icon icon="tools" />My skills
+						<font-awesome-icon icon="tools" />&nbsp;My skills
 					</a>
 				</el-col>
 				<el-col :span="5">
 					<a href="#interest" class="nav-link">
-						<font-awesome-icon icon="rocket" />Interests
+						<font-awesome-icon icon="rocket" />&nbsp;Interests
 					</a>
 				</el-col>
 				<el-col :span="5">
 					<a href="#footer" class="nav-link">
-						<font-awesome-icon icon="phone" />Contact me
+						<font-awesome-icon icon="phone" />&nbsp;Contact me
 					</a>
 				</el-col>
 			</el-row>
@@ -45,7 +45,7 @@
 						<img width="40" src="@/assets/gitam.png" />
 					</span>
 				</el-col>
-				<el-col :span="1">
+				<el-col :span="4">
 					<font-awesome-icon
 						style="color:white;font-size:32px;margin-right:8%;"
 						icon="bars"
@@ -117,14 +117,21 @@
 					</el-row>
 					<!-- Socail links -->
 					<el-row type="flex" justify="center" :gutter="24" style="margin-top:20px;">
-						<el-col :xl="2" :lg="2" :md="2">
+						<el-col :xl="2" :lg="2" :md="1">
 							<a href="https://fb.com/giittam">
 								<div class="social-icon">
 									<font-awesome-icon :icon="['fab', 'facebook-f']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col :xl="2" :lg="2" :md="2">
+						<el-col :xl="2" :lg="2" :md="1">
+							<a href="https://github.com/gitamgadtaula/">
+								<div class="social-icon">
+									<font-awesome-icon :icon="['fab', 'github']" />
+								</div>
+							</a>
+						</el-col>
+						<el-col :xl="2" :lg="2" :md="1">
 							<a href="https://twitter.com/gitamgadtaula">
 								<div class="social-icon">
 									<font-awesome-icon :icon="['fab', 'twitter']" />
@@ -176,10 +183,11 @@
 							</p>
 
 							<p style="font-size:18px; font-weight:400;padding-top:6px;">
-								I am just among any other sapiens who is walking around with some purpose and
-								ambition in their life. But in the meantime I also find
-								myself to be carefree, enojying the present to the fullest without worrying what lies ahead in the future.
-								I enjoy nature, literature, art, adventure, technology and computers, just to name a few. And when I look
+								I am just among any other sapiens who strolls around with some purpose and
+								ambition in their life. In the meantime I also find
+								myself to be carefree because somebody said, "worry does not empty tomorrow of its sorrow, it empties today of its strength". I prefer 
+								to think myself as a citizen of this obsolete singularity since these borders are merely a construct. 
+								I enjoy nature, literature, art, technology and computers, adventure, just to name a few. And when I look
 								at people I sometimes make myself try and feel them as more than just
 								a random person walking by.
 							</p>
@@ -205,10 +213,11 @@
 							</p>
 							<br />
 							<p style="font-size:15px; font-weight:400;">
-								I am just among any other sapiens who is walking around with some purpose and
-								ambition in their life. But in the meantime I also find
-								myself to be carefree, enojying the present to the fullest without worrying what lies ahead in the future.
-								I enjoy nature, literature, art, adventure, technology and computers, just to name a few. And when I look
+								I am just among any other sapiens who strolls around with some purpose and
+								ambition in their life. In the meantime I also find
+								myself to be carefree because somebody said, "worry does not empty tomorrow of its sorrow, it empties today of its strength". I prefer 
+								to think myself as a citizen of this obsolete singularity since these borders are merely a construct. 
+								I enjoy nature, literature, art, technology and computers, adventure, just to name a few. And when I look
 								at people I sometimes make myself try and feel them as more than just
 								a random person walking by.
 							</p>
@@ -233,10 +242,10 @@
 
 					<el-col :span="12" class="animated bounceInLeft" style="text-align:right;">
 						<h1>
-							<font-awesome-icon icon="building" />Work
+							<font-awesome-icon icon="building" />&nbsp;Work
 						</h1>
 						<h3>
-							<font-awesome-icon icon="terminal" />Web Developer
+							<font-awesome-icon icon="terminal" />&nbsp;Web Developer
 						</h3>
 						<h2>Rasello Nepal</h2>
 					</el-col>
@@ -283,13 +292,16 @@
 			</h1>
 			<div style="margin-top:20px;color:white;">
 				<p class="skill-desc">
-					<i>
-						I am a fresh university graduate in computer science who has just kicked off his
+					<!-- <i> -->
+						<!-- I am a fresh university graduate in computer science who has just kicked off his
 						career in Information technogly. Eventhough I'm a newbie in this
 						competetive field, the way I have shaped myself during my acadameic
 						spell and my internship later has me helped a lot to quickly grasp
-						the new things floating around the air. Listed below are my skill sets, but not limited to :
-					</i>
+						the new things floating around the air. -->
+						I'm a fresh computer science graduate and a web developer by profession. I have been doing programming since back in 8th standard in school. 
+						Its another way of me expressing things and I am more than delighted to actually make a living out of it. I like being acquainted with new technologies, solving problems, automating things on web, and I'm also a very keen enthusiast of Machine learning and Data science.
+						My skills are listed below but are not only limited to :
+					<!-- </i> -->
 				</p>
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
 					<el-col :span="11">
@@ -299,7 +311,7 @@
 						</div>
 					</el-col>
 					<el-col :span="11">
-						<p class="skill-name">CSS3</p>
+						<p class="skill-name">CSS3/Sass</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:90%;"></div>
 						</div>
@@ -389,10 +401,13 @@
 				</span>
 				in Quarantine.
 				<p>
-					<font-awesome-icon icon="envelope" />gitamgadtaula@gmail.com
+					<font-awesome-icon icon="envelope" />&nbsp;gitamgadtaula@gmail.com
 				</p>
+				<!-- <p>
+					<font-awesome-icon icon="briefcase" />&nbsp;gitam@rasello.com
+				</p> -->
 				<p>
-					<font-awesome-icon icon="map-marker-alt" />Kathmandu Nepal
+					<font-awesome-icon icon="map-marker-alt" />&nbsp;Kathmandu Nepal
 				</p>
 				<div style="max-width:50%;margin-left:auto;
           margin-right:auto;display:block;">
@@ -412,12 +427,12 @@
 </template>
 <style scoped>
 	.nav-link {
-		margin-top: 2px;
+		/* margin-top: 7px; */
 	}
 	.nav-link:hover {
-		background-color: #00adfc;
+		background-color: #451c46;
 		padding: 8px;
-		border-radius: 4px;
+		border-radius: 24px;
 	}
 	.nav-row {
 		padding-top: 9px;
@@ -448,9 +463,9 @@
 
 
 <script>
-	const img1 = require("./assets/football2.jpg");
-	const img2 = require("./assets/guitar.jpg");
-	const img3 = require("./assets/travel1.jpg");
+	const img1 = require("@/assets/football2.jpg");
+	const img2 = require("@/assets/guitar.jpg");
+	const img3 = require("@/assets/travel1.jpg");
 
 	export default {
 		name: "App",
