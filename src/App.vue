@@ -298,8 +298,8 @@
 						competetive field, the way I have shaped myself during my acadameic
 						spell and my internship later has me helped a lot to quickly grasp
 						the new things floating around the air. -->
-						I'm a fresh computer science graduate and a web developer by profession. I have been doing programming since back in 8th standard in school. 
-						Its another way of me expressing things and I am more than delighted to actually make a living out of it. I like being acquainted with new technologies, solving problems, automating things on web, and I'm also a very keen enthusiast of Machine learning and Data science.
+						I'm a fresh computer science graduate and a web developer by profession. I have been doing computer programming since back in 8th standard in school. 
+						For me, its another way of me expressing things and I am more than delighted to actually make a living out of it. I like being acquainted with new technologies, solving problems, automating things on web, and I'm also a very keen enthusiast of Machine learning and Data science.
 						My skills are listed below but are not only limited to :
 					<!-- </i> -->
 				</p>
@@ -350,13 +350,13 @@
 					<el-col :span="11">
 						<p class="skill-name">Python</p>
 						<div class="skill-container">
-							<div class="skill-container-child" style="width:45%;"></div>
+							<div class="skill-container-child" style="width:50%;"></div>
 						</div>
 					</el-col>
 					<el-col :span="11">
 						<p class="skill-name">Photoshop</p>
 						<div class="skill-container">
-							<div class="skill-container-child" style="width:45%;"></div>
+							<div class="skill-container-child" style="width:55%;"></div>
 						</div>
 					</el-col>
 				</el-row>
