@@ -183,13 +183,13 @@
 							</p>
 
 							<p style="font-size:18px; font-weight:400;padding-top:6px;">
-								I am just among any other sapiens who strolls around with some purpose and
-								ambition in their life. In the meantime I also find
-								myself to be carefree because somebody said, "worry does not empty tomorrow of its sorrow, it empties today of its strength". I prefer 
-								to think myself as a citizen of this obsolete singularity since these borders are merely a construct. 
-								I enjoy nature, literature, art, technology and computers, adventure, just to name a few. And when I look
+								I am just among any other sapiens who is strolling around with some purpose and
+								ambition in their life. But in the meantime I find
+								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
+								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. And when I look
 								at people I sometimes make myself try and feel them as more than just
-								a random person walking by.
+								a random person walking by. And Since these man made borders are merely a construct, I prefer 
+								to think myself as a citizen of this world . 
 							</p>
 						</h2>
 					</el-col>
@@ -213,13 +213,13 @@
 							</p>
 							<br />
 							<p style="font-size:15px; font-weight:400;">
-								I am just among any other sapiens who strolls around with some purpose and
-								ambition in their life. In the meantime I also find
-								myself to be carefree because somebody said, "worry does not empty tomorrow of its sorrow, it empties today of its strength". I prefer 
-								to think myself as a citizen of this obsolete singularity since these borders are merely a construct. 
-								I enjoy nature, literature, art, technology and computers, adventure, just to name a few. And when I look
+								I am just among any other sapiens who is strolling around with some purpose and
+								ambition in their life. But in the meantime I find
+								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
+								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports, just to name a few. And when I look
 								at people I sometimes make myself try and feel them as more than just
-								a random person walking by.
+								a random person walking by. And Since these man made borders are merely a construct, I prefer 
+								to think myself as a citizen of this world . 
 							</p>
 						</h2>
 					</el-col>
@@ -426,9 +426,7 @@
 	</div>
 </template>
 <style scoped>
-	.nav-link {
-		/* margin-top: 7px; */
-	}
+	
 	.nav-link:hover {
 		background-color: #451c46;
 		padding: 8px;
