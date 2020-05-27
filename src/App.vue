@@ -95,10 +95,10 @@
 					</el-row>
 					<el-row type="flex" justify="center">
 						<el-col :span="24">
-							<h1 class="header-h1">I'm Gitam</h1>
+							<h1 class="header-h1" style="border:none;">I'm Gitam</h1>
 						</el-col>
 					</el-row>
-					<hr />
+					<hr style="width:50%;"/>
 					<el-row type="flex" justify="center">
 						<span style="color:#fff">
 							<typewriter
@@ -117,44 +117,44 @@
 					</el-row>
 					<!-- Socail links -->
 					<el-row type="flex" justify="center" :gutter="24" style="margin-top:20px;">
-						<el-col :xl="2" :lg="2" :md="1">
+						<el-col class="social-icon">
 							<a href="https://fb.com/giittam">
-								<div class="social-icon">
+								<div class="social-ico">
 									<font-awesome-icon :icon="['fab', 'facebook-f']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col :xl="2" :lg="2" :md="1">
+						<el-col class="social-icon">
 							<a href="https://github.com/gitamgadtaula/">
-								<div class="social-icon">
+								<div class="social-ico">
 									<font-awesome-icon :icon="['fab', 'github']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col :xl="2" :lg="2" :md="1">
+						<el-col class="social-icon">
 							<a href="https://twitter.com/gitamgadtaula">
-								<div class="social-icon">
+								<div class="social-ico">
 									<font-awesome-icon :icon="['fab', 'twitter']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col :xl="2" :lg="2" :md="2">
+						<el-col class="social-icon">
 							<a href="https://instagram.com/gitamgadtaula">
-								<div class="social-icon">
+								<div class="social-ico">
 									<font-awesome-icon :icon="['fab', 'instagram']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col :xl="2" :lg="2" :md="2">
+						<el-col class="social-icon">
 							<a href="https://www.quora.com/profile/Gitam-Gadtaula">
-								<div class="social-icon">
+								<div class="social-ico">
 									<font-awesome-icon :icon="['fab', 'quora']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col :xl="2" :lg="2" :md="2">
+						<el-col class="social-icon">
 							<a href="https://www.linkedin.com/in/gitamgadtaula/">
-								<div class="social-icon">
+								<div class="social-ico">
 									<font-awesome-icon :icon="['fab', 'linkedin-in']" />
 								</div>
 							</a>
@@ -166,15 +166,15 @@
 				</div>
 			</div>
 		</section>
-
-		<div style="background-color:black;">
+		<!-- div for curved border -->
+		<div style="background-color:#80620a;">
 			<section class="main hidden-sm-and-down" id="about">
 				<el-row type="flex" justify="space-between" direction="column">
 					<el-col :span="9" class>
 						<img src="@/assets/me.jpeg" class="main-img" />
 					</el-col>
 					<el-col :span="15">
-						<h1 class="header-h1" style="color:#111110; ">About Myself</h1>
+						<h1 class="header-h1">About Myself</h1>
 						<h2 style="margin-top:10px;font-weight: 200;">
 							I'm Gitam Gadtaula.
 							<p style="font-size:18px; font-weight:400;">
@@ -182,14 +182,14 @@
 								create things out of imagination.
 							</p>
 
-							<p style="font-size:18px; font-weight:400;padding-top:6px;">
+							<p style="font-size:18px; font-weight:400;padding-top:3px;">
 								I am just among any other sapiens who is strolling around with some purpose and
 								ambition in their life. But in the meantime I find
 								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
-								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. And when I look
-								at people I sometimes make myself try and feel them as more than just
-								a random person walking by. And Since these man made borders are merely a construct, I prefer 
-								to think myself as a citizen of this world . 
+								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. Sometimes when I look
+								at people I make myself try and feel them as more than just
+								a random person walking by. 
+								
 							</p>
 						</h2>
 					</el-col>
@@ -204,7 +204,7 @@
 				</el-row>
 				<el-row>
 					<el-col :span="24">
-						<h1 class="header-h1" style="color:#111110;">About myself</h1>
+						<h1 class="header-h1">About myself</h1>
 						<h2 style="margin-top:10px; font-weight: 200;">
 							I'm Gitam Gadtaula.
 							<p style="font-size:15px; font-weight:400;">
@@ -216,10 +216,9 @@
 								I am just among any other sapiens who is strolling around with some purpose and
 								ambition in their life. But in the meantime I find
 								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
-								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports, just to name a few. And when I look
-								at people I sometimes make myself try and feel them as more than just
-								a random person walking by. And Since these man made borders are merely a construct, I prefer 
-								to think myself as a citizen of this world . 
+								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports, just to name a few. Sometimes when I look
+								at people I make myself try and feel them as more than just
+								a random person walking by. 
 							</p>
 						</h2>
 					</el-col>
@@ -227,22 +226,31 @@
 			</section>
 
 			<section class="work">
+				I'm a fresh computer science graduate and a web developer by profession. 
+				I work on both client side and server slide applications. 
+				I have been doing computer programming since back in 8th standard in school. 
+				For me, its another way of me expressing things and I am more than delighted to actually make a living out of it.
+				I like being acquainted with new technologies, solving problems, automating things on web, and I'm also 
+				a very keen enthusiast of Machine learning and Data science.
+				<br />
+				<hr>
 				<el-row type="flex" justify="space-between">
 					<el-col :span="12" class="animated bounceInRight" style="text-align:left;">
-						<h1>
-							Education
+						<h1 style="margin-bottom:4px;">
+							EDUCATION
 							<font-awesome-icon icon="university" />
+							
 						</h1>
 						<h3>
-							Computer science
+							Computer Science
 							<font-awesome-icon icon="graduation-cap" />
 						</h3>
 						<h2>Kathmandu University</h2>
 					</el-col>
 
 					<el-col :span="12" class="animated bounceInLeft" style="text-align:right;">
-						<h1>
-							<font-awesome-icon icon="building" />&nbsp;Work
+						<h1 style="margin-bottom:4px;">
+							<font-awesome-icon icon="building" />&nbsp;WORK
 						</h1>
 						<h3>
 							<font-awesome-icon icon="terminal" />&nbsp;Web Developer
@@ -250,6 +258,8 @@
 						<h2>Rasello Nepal</h2>
 					</el-col>
 				</el-row>
+
+
 				<!-- <div class="block">
           <el-timeline>
             <el-timeline-item timestamp placement="top" style="color:white;">
@@ -299,18 +309,20 @@
 						spell and my internship later has me helped a lot to quickly grasp
 						the new things floating around the air. -->
 						I'm a fresh computer science graduate and a web developer by profession. I have been doing computer programming since back in 8th standard in school. 
-						For me, its another way of me expressing things and I am more than delighted to actually make a living out of it. I like being acquainted with new technologies, solving problems, automating things on web, and I'm also a very keen enthusiast of Machine learning and Data science.
+						For me, its another way of me expressing things and I am more than delighted to actually make a living out of it. 
 						My skills are listed below but are not only limited to :
 					<!-- </i> -->
 				</p>
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
 					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'html5']" class="skills-icon"/>
 						<p class="skill-name">HTML5</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:90%;"></div>
 						</div>
 					</el-col>
 					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'sass']" class="skills-icon"/>
 						<p class="skill-name">CSS3/Sass</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:90%;"></div>
@@ -319,12 +331,14 @@
 				</el-row>
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
 					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'js-square']" class="skills-icon"/>
 						<p class="skill-name">Javascript</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:75%;"></div>
 						</div>
 					</el-col>
 					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'php']" class="skills-icon"/>
 						<p class="skill-name">PHP</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:80%;"></div>
@@ -333,12 +347,14 @@
 				</el-row>
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
 					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'vuejs']" class="skills-icon"/>
 						<p class="skill-name">Vue js</p>
 						<div class="skill-container">
-							<div class="skill-container-child" style="width:70%;"></div>
+							<div class="skill-container-child" style="width:75%;"></div>
 						</div>
 					</el-col>
 					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'laravel']" class="skills-icon"/>
 						<p class="skill-name">Laravel</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:65%;"></div>
@@ -348,12 +364,31 @@
 
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
 					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'node-js']" class="skills-icon"/>
+						<p class="skill-name">Node JS</p>
+						<div class="skill-container">
+							<div class="skill-container-child" style="width:65%;"></div>
+						</div>
+					</el-col>
+					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'github']" class="skills-icon"/>
+						<p class="skill-name">Github</p>
+						<div class="skill-container">
+							<div class="skill-container-child" style="width:90%;"></div>
+						</div>
+					</el-col>
+				</el-row>
+
+				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
+					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'python']" class="skills-icon"/>
 						<p class="skill-name">Python</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:50%;"></div>
 						</div>
 					</el-col>
 					<el-col :span="11">
+						<font-awesome-icon :icon="['fab', 'adobe']" class="skills-icon"/>
 						<p class="skill-name">Photoshop</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:55%;"></div>
