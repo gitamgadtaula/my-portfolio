@@ -448,11 +448,13 @@
 				</carousel-3d>
 			</section>
 			<section class="footer" id="footer">
-				Made with
+				<h2 style="font-weight: 100"> Made with
 				<span style="color:red;">
-					<font-awesome-icon icon="heart" />
+					<!-- <font-awesome-icon icon="heart" /> -->
+					❤️
 				</span>
 				in Quarantine.
+				</h2>
 				<p>
 					<font-awesome-icon icon="envelope" />&nbsp;gitamgadtaula@gmail.com
 				</p>
