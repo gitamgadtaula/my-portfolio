@@ -87,7 +87,7 @@
 
 			<div id="app-container">
 				<!-- break a line if the nav bar is extended for mobile view so it wont cover the header top -->
-				<div style="padding-top:120px;" v-if="navToggle"></div>
+			<div style="padding-top:120px;" v-if="navToggle"></div>
 				<header>
 					<h1 class="greet">Hello world !</h1>
 					<el-row type="flex" justify="center">
@@ -167,7 +167,7 @@
 			</div>
 		</section>
 		<!-- div for curved border -->
-		<div style="background-color:#80620a;">
+		<!-- <div style="background-color:#0;"> -->
 			<section class="main hidden-sm-and-down" id="about">
 				<el-row type="flex" justify="space-between" direction="column">
 					<el-col :span="9" class>
@@ -186,7 +186,9 @@
 								I am just among any other sapiens who is strolling around with some purpose and
 								ambition in their life. But in the meantime I find
 								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
-								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. Sometimes when I look
+								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. I'm a star gazer
+								and always "hey look at the moon" kinda person. I love fantasies and science fiction. I keep fantasizing myself 
+								in places god only know exists. And sometimes when I look
 								at people I make myself try and feel them as more than just
 								a random person walking by. 
 								
@@ -197,47 +199,55 @@
 			</section>
 
 			<section class="main hidden-md-and-up">
+				<!-- <div class="main-sm-header">
+				<h1 class="header-h1" style="font-size:22px;">About myself</h1>
+				</div> -->
+					
 				<el-row type="flex" justify="space-between" direction="column">
-					<el-col :span="4">
+					<el-col :span="10">
 						<img src="@/assets/me.jpeg" class="main-img" style="width:120px;border-radius:50%;" />
 					</el-col>
-				</el-row>
-				<el-row>
-					<el-col :span="24">
-						<h1 class="header-h1">About myself</h1>
-						<h2 style="margin-top:10px; font-weight: 200;">
+					<el-col :span="14" style="margin-top: 60px;">
+						<h3 style="margin-top:10px; font-weight: 100;">
 							I'm Gitam Gadtaula.
-							<p style="font-size:15px; font-weight:400;">
+						</h3>
+						<p style="font-size:13px; font-weight:400;">
 								A simple, creative and a fun-loving person who likes to
 								create things out of imagination.
 							</p>
-							<br />
-							<p style="font-size:15px; font-weight:400;">
+						
+					</el-col>
+				</el-row>
+				<el-row>
+					<el-col :span="24">		
+							<p style="font-size:13px; font-weight:400;">
 								I am just among any other sapiens who is strolling around with some purpose and
 								ambition in their life. But in the meantime I find
 								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
-								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports, just to name a few. Sometimes when I look
+								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. I'm a star gazer
+								and always "hey look at the moon" kinda person. I love fantasies and science fiction. I keep fantasizing myself 
+								in places god only know exists. And sometimes when I look
 								at people I make myself try and feel them as more than just
 								a random person walking by. 
 							</p>
-						</h2>
+						
 					</el-col>
 				</el-row>
 			</section>
 
 			<section class="work">
-				I'm a fresh computer science graduate and a web developer by profession. 
+				<!-- I'm a fresh computer science graduate and a web developer by profession. 
 				I work on both client side and server slide applications. 
 				I have been doing computer programming since back in 8th standard in school. 
 				For me, its another way of me expressing things and I am more than delighted to actually make a living out of it.
 				I like being acquainted with new technologies, solving problems, automating things on web, and I'm also 
 				a very keen enthusiast of Machine learning and Data science.
 				<br />
-				<hr>
-				<el-row type="flex" justify="space-between">
-					<el-col :span="12" class="animated bounceInRight" style="text-align:left;">
-						<h1 style="margin-bottom:4px;">
-							EDUCATION
+				<hr> -->
+				<!-- <el-row type="flex" justify="space-between"> -->
+					<!-- <el-col :span="12" class="animated bounceInRight" style="text-align:left;"> -->
+						<h1 class="header-h1" style="color:black;">
+							Education
 							<font-awesome-icon icon="university" />
 							
 						</h1>
@@ -246,18 +256,22 @@
 							<font-awesome-icon icon="graduation-cap" />
 						</h3>
 						<h2>Kathmandu University</h2>
-					</el-col>
-
-					<el-col :span="12" class="animated bounceInLeft" style="text-align:right;">
-						<h1 style="margin-bottom:4px;">
-							<font-awesome-icon icon="building" />&nbsp;WORK
+					<!-- </el-col> -->
+					<el-divider>
+						<el-col :span="3">
+							<i class="el-icon-star-off"></i>
+						</el-col>
+					</el-divider>
+					<!-- <el-col :span="12" class="animated bounceInLeft" style="text-align:right;"> -->
+						<h1 class="header-h1" style="color:black;" >
+						Profession <font-awesome-icon icon="industry" />
 						</h1>
 						<h3>
 							<font-awesome-icon icon="terminal" />&nbsp;Web Developer
 						</h3>
-						<h2>Rasello Nepal</h2>
-					</el-col>
-				</el-row>
+						<h2>Rasello Nepal </h2>
+					<!-- </el-col> -->
+				<!-- </el-row> -->
 
 
 				<!-- <div class="block">
@@ -294,7 +308,7 @@
           </el-timeline>
 				</div>-->
 			</section>
-		</div>
+		<!-- </div> -->
 		<section class="skill" id="skill">
 			<h1 class="header-h1">
 				MY SKILLS
@@ -308,8 +322,12 @@
 						competetive field, the way I have shaped myself during my acadameic
 						spell and my internship later has me helped a lot to quickly grasp
 						the new things floating around the air. -->
-						I'm a fresh computer science graduate and a web developer by profession. I have been doing computer programming since back in 8th standard in school. 
-						For me, its another way of me expressing things and I am more than delighted to actually make a living out of it. 
+						I'm a fresh computer science graduate and a web developer by profession. I have been doing computer
+						programming since way back in school. 
+						For me, its another way of me expressing things and I am more than delighted 
+						to actually make a living out of it. I'm a progressive and a stotic learner. I like being acquainted with new technologies, 
+						solving problems, designing a responsive UI,  automating things on web and whatnot. I'm also 
+						a very keen enthusiast of Machine learning and Data science.
 						My skills are listed below but are not only limited to :
 					<!-- </i> -->
 				</p>
@@ -485,11 +503,14 @@
 			rgb(30, 25, 66) 100%
 		);
 		border: none;
+		
 	}
 
 	@media only screen and (max-width: 580px) {
 		.c-desc {
-			font-size: 14px;
+			font-size: 12px;
+			padding-bottom: 40px;
+
 		}
 	}
 </style>
@@ -522,7 +543,7 @@
 						img: img3,
 						caption: "Travelling",
 						desc:
-							"Travelling helps open my mind. You realize that there's no one way to live life. Meeting people from other places will show you that your world view isn't the same as everyone else's.  By being exposed to new places, people and cultures, it helps me develop a wider world view."
+							"Travelling helps open my mind and makes me realize that there's no one way to live life. By being exposed to new places, people and cultures, it helps me develop a wider world view."
 					}
 				]
 			};
