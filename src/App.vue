@@ -54,32 +54,31 @@
 				</el-col>
 			</el-row>
 			<div class="toggle" v-if="navToggle">
+				<a href="#" @click="navToggle=false">
 				<el-row class="nav-row" type="flex">
-					<a href="#" @click="navToggle=false">
 						<font-awesome-icon icon="home" />Home
-					</a>
 				</el-row>
-
+				</a>
+				<a href="#about" @click="navToggle=false">
 				<el-row class="nav-row" type="flex">
-					<a href="#about" @click="navToggle=false">
 						<font-awesome-icon icon="user-alt" />About me
-					</a>
 				</el-row>
+				</a>
+				<a href="#skill" @click="navToggle=false">
 				<el-row class="nav-row" type="flex">
-					<a href="#skill" @click="navToggle=false">
 						<font-awesome-icon icon="tools" />My skills
-					</a>
 				</el-row>
+				</a>
+				<a href="#interest" @click="navToggle=false">
 				<el-row class="nav-row" type="flex">
-					<a href="#interest" @click="navToggle=false">
 						<font-awesome-icon icon="rocket" />Interests
-					</a>
 				</el-row>
+				</a>
+				<a href="#" @click="navToggle=false">
 				<el-row class="nav-row" type="flex">
-					<a href="#" @click="navToggle=false">
 						<font-awesome-icon icon="phone" />Contact me
-					</a>
 				</el-row>
+				</a>
 			</div>
 		</nav>
 		<section class="particle">
@@ -183,14 +182,7 @@
 							</p>
 
 							<p style="font-size:18px; font-weight:400;padding-top:3px;">
-								I am just among any other sapiens who is strolling around with some purpose and
-								ambition in their life. But in the meantime I find
-								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
-								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. I'm a star gazer
-								and always "hey look at the moon" kinda person. I love fantasies and science fiction. I keep fantasizing myself 
-								in places god only know exists. And sometimes when I look
-								at people I make myself try and feel them as more than just
-								a random person walking by. 
+								{{aboutMe}}	
 								
 							</p>
 						</h2>
@@ -211,7 +203,7 @@
 						<h3 style="margin-top:10px; font-weight: 100;">
 							I'm Gitam Gadtaula.
 						</h3>
-						<p style="font-size:13px; font-weight:400;">
+						<p style="font-size:14px; font-weight:400;">
 								A simple, creative and a fun-loving person who likes to
 								create things out of imagination.
 							</p>
@@ -220,15 +212,8 @@
 				</el-row>
 				<el-row>
 					<el-col :span="24">		
-							<p style="font-size:13px; font-weight:400;">
-								I am just among any other sapiens who is strolling around with some purpose and
-								ambition in their life. But in the meantime I find
-								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
-								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. I'm a star gazer
-								and always "hey look at the moon" kinda person. I love fantasies and science fiction. I keep fantasizing myself 
-								in places god only know exists. And sometimes when I look
-								at people I make myself try and feel them as more than just
-								a random person walking by. 
+							<p style="font-size:14px; font-weight:400;">
+								{{aboutMe}}
 							</p>
 						
 					</el-col>
@@ -267,7 +252,7 @@
 						Profession <font-awesome-icon icon="industry" />
 						</h1>
 						<h3>
-							<font-awesome-icon icon="terminal" />&nbsp;Web Developer
+							<font-awesome-icon icon="terminal" />&nbsp;Developer
 						</h3>
 						<h2>Rasello Nepal </h2>
 					<!-- </el-col> -->
@@ -325,7 +310,7 @@
 						I'm a fresh computer science graduate and a web developer by profession. I have been doing computer
 						programming since way back in school. 
 						For me, its another way of me expressing things and I am more than delighted 
-						to actually make a living out of it. I'm a progressive and a stotic learner. I like being acquainted with new technologies, 
+						to actually make a living out of it. I'm a progressive and a stoic learner. I like being acquainted with new technologies, 
 						solving problems, designing a responsive UI,  automating things on web and whatnot. I'm also 
 						a very keen enthusiast of Machine learning and Data science.
 						My skills are listed below but are not only limited to :
@@ -426,7 +411,7 @@
 					style="border:none;"
 					:width="620"
 					:height="560"
-					:autoplay="true"
+					:autoplay="false"
 					:autoplay-timeout="5000"
 					:controls-visible="true"
 				>
@@ -505,15 +490,24 @@
 			rgb(30, 25, 66) 100%
 		);
 		border: none;
+		position: absolute;
 		
 	}
+	.c-desc {
+			font-size: 18px;
+			font-family: "Rajdhani", sans-serif;
+			padding: 5px;
+			padding-bottom: 80px;
+			position: relative; 
+			top: -12px;
+
+		}
 
 	@media only screen and (max-width: 580px) {
 		.c-desc {
 			font-size: 12px;
-			padding-bottom: 40px;
-
 		}
+		
 	}
 </style>
 
@@ -522,12 +516,22 @@
 	const img1 = require("@/assets/football2.jpg");
 	const img2 = require("@/assets/guitar.jpg");
 	const img3 = require("@/assets/travel1.jpg");
+	// const img4 = require("@/assets/meme.jpg");
+	const about_myself = `I am just among any other sapiens who is strolling around with some purpose and
+								ambition in their life. But in the meantime I find
+								myself to be carefree because worry only empties today of its strength and does not empty tomorrow of its sorrow. 
+								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. I'm a star gazer
+								and always the, "hey look at the moon" kinda person. I love fantasies and science fiction. I keep fantasizing myself 
+								in places god only know exists. And when sometimes I look
+								at people I make myself try and feel them as more than just
+								a random person walking by. `;
 
 	export default {
 		name: "App",
 		data() {
 			return {
 				navToggle: false,
+				aboutMe: about_myself,
 				assets: [
 					{
 						img: img1,
@@ -547,6 +551,11 @@
 						desc:
 							"Travelling helps open my mind and makes me realize that there's no one way to live life. By being exposed to new places, people and cultures, it helps me develop a wider world view."
 					}
+					// {
+					// 	img: img4,
+					// 	caption: "Humor",
+					// 	desc : "Humor brings smile on the face even on the saddest souls. Humor makes people happy even if its momentary. I like humor, comics, jokes and memes.  I like creating memes sometimes to make fun out of my friends. It keeps me pyschologically happy and mentally active. "
+					// }
 				]
 			};
 		}
