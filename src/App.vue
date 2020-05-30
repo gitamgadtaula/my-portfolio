@@ -411,7 +411,7 @@
 					style="border:none;"
 					:width="620"
 					:height="560"
-					:autoplay="false"
+					:autoplay="true"
 					:autoplay-timeout="5000"
 					:controls-visible="true"
 				>
