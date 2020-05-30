@@ -90,11 +90,11 @@
 				<header>
 					<h1 class="greet">Hello world !</h1>
 					<el-row type="flex" justify="center">
-						<img src="@/assets/3.jpeg" class="header-img" />
+						<img src="@/assets/3.jpeg" class="header-img" alt="gitam gadtaula" />
 					</el-row>
 					<el-row type="flex" justify="center">
 						<el-col :span="24">
-							<h1 class="header-h1" style="border:none;">I'm Gitam</h1>
+							<h1 class="header-h1" style="border:none;">I'm Gitam Gadtaula</h1>
 						</el-col>
 					</el-row>
 					<hr style="width:50%;"/>
@@ -169,23 +169,24 @@
 		<!-- <div style="background-color:#0;"> -->
 			<section class="main hidden-sm-and-down" id="about">
 				<el-row type="flex" justify="space-between" direction="column">
-					<el-col :span="9" class>
-						<img src="@/assets/me.jpeg" class="main-img" />
+					<el-col :span="9">
+						<img src="@/assets/me.jpeg" class="main-img" alt="gitam gadtaula" />
 					</el-col>
 					<el-col :span="15">
 						<h1 class="header-h1">About Myself</h1>
-						<h2 style="margin-top:10px;font-weight: 200;">
-							I'm Gitam Gadtaula.
-							<p style="font-size:18px; font-weight:400;">
+						<!-- <h2 style="margin-top:10px;font-weight: 200;" class="cursive">
+							I'm gitam gadtaula.
+						</h2> -->
+							<p class="main-desc cursive">
 								A simple, creative and a fun-loving person who likes to
 								create things out of imagination.
 							</p>
 
-							<p style="font-size:18px; font-weight:400;padding-top:3px;">
+							<p class="main-desc cursive">
 								{{aboutMe}}	
 								
 							</p>
-						</h2>
+						
 					</el-col>
 				</el-row>
 			</section>
@@ -199,11 +200,8 @@
 					<el-col :span="10">
 						<img src="@/assets/me.jpeg" class="main-img" style="width:120px;border-radius:50%;" />
 					</el-col>
-					<el-col :span="14" style="margin-top: 60px;">
-						<h3 style="margin-top:10px; font-weight: 100;">
-							I'm Gitam Gadtaula.
-						</h3>
-						<p style="font-size:14px; font-weight:400;">
+					<el-col :span="14" style="margin-top:0px;">
+						<p class="main-desc cursive">
 								A simple, creative and a fun-loving person who likes to
 								create things out of imagination.
 							</p>
@@ -212,7 +210,7 @@
 				</el-row>
 				<el-row>
 					<el-col :span="24">		
-							<p style="font-size:14px; font-weight:400;">
+							<p class="main-desc cursive">
 								{{aboutMe}}
 							</p>
 						
@@ -221,16 +219,6 @@
 			</section>
 
 			<section class="work">
-				<!-- I'm a fresh computer science graduate and a web developer by profession. 
-				I work on both client side and server slide applications. 
-				I have been doing computer programming since back in 8th standard in school. 
-				For me, its another way of me expressing things and I am more than delighted to actually make a living out of it.
-				I like being acquainted with new technologies, solving problems, automating things on web, and I'm also 
-				a very keen enthusiast of Machine learning and Data science.
-				<br />
-				<hr> -->
-				<!-- <el-row type="flex" justify="space-between"> -->
-					<!-- <el-col :span="12" class="animated bounceInRight" style="text-align:left;"> -->
 						<h1 class="header-h1" style="color:black;">
 							Education
 							<font-awesome-icon icon="university" />
@@ -302,18 +290,14 @@
 			<div style="margin-top:20px;color:white;">
 				<p class="skill-desc">
 					<!-- <i> -->
-						<!-- I am a fresh university graduate in computer science who has just kicked off his
-						career in Information technogly. Eventhough I'm a newbie in this
-						competetive field, the way I have shaped myself during my acadameic
-						spell and my internship later has me helped a lot to quickly grasp
-						the new things floating around the air. -->
+						
 						I'm a fresh computer science graduate and a web developer by profession. I have been doing computer
 						programming since way back in school. 
 						For me, its another way of me expressing things and I am more than delighted 
 						to actually make a living out of it. I'm a progressive and a stoic learner. I like being acquainted with new technologies, 
-						solving problems, designing a responsive UI,  automating things on web and whatnot. I'm also 
+						solving problems, designing a responsive UI with a rich user experience, automating things on web and so on. I'm also 
 						a very keen enthusiast of Machine learning and Data science.
-						My skills are listed below but are not only limited to :
+						Listed below are my skills but just not limited to :
 					<!-- </i> -->
 				</p>
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
@@ -433,7 +417,7 @@
 				</carousel-3d>
 			</section>
 			<section class="footer" id="footer">
-				<h2 style="font-weight: 100"> Made with
+				<h2 style="font-weight: 100" class="cursive"> Made with
 				<span style="color:red;">
 					<!-- <font-awesome-icon icon="heart" /> -->
 					❤️
@@ -518,13 +502,13 @@
 	const img3 = require("@/assets/travel1.jpg");
 	// const img4 = require("@/assets/meme.jpg");
 	const about_myself = `I am just among any other sapiens who is strolling around with some purpose and
-								ambition in their life. But in the meantime I find
-								myself to be carefree because worry only empties today of its strength and does not empty tomorrow of its sorrow. 
-								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. I'm a star gazer
-								and always the, "hey look at the moon" kinda person. I love fantasies and science fiction. I keep fantasizing myself 
-								in places god only know exists. And when sometimes I look
-								at people I make myself try and feel them as more than just
-								a random person walking by. `;
+						  ambition in their life. But in the meantime I find
+						  myself to be carefree because worry only empties today of its strength but does not empty tomorrow of its sorrow. 
+						  I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports, music and whatnot.
+						  I'm a star gazer and I always prefer watching sunset over netflix. I love fantasies and science fiction. 
+						  I keep fantasizing myself in places god only know exists. And sometimes when I look
+						  at people I make myself try and feel them as more than just
+						  a random person walking by. `;
 
 	export default {
 		name: "App",
