@@ -94,7 +94,7 @@
 					</el-row>
 					<el-row type="flex" justify="center">
 						<el-col :span="24">
-							<h1 class="header-h1" style="border:none;">I'm Gitam Gadtaula</h1>
+							<h1 class="header-h1" style="border:none;font-size:20px;">I'm Gitam Gadtaula</h1>
 						</el-col>
 					</el-row>
 					<hr style="width:50%;"/>
