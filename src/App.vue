@@ -54,31 +54,32 @@
 				</el-col>
 			</el-row>
 			<div class="toggle" v-if="navToggle">
-				<a href="#" @click="navToggle=false">
 				<el-row class="nav-row" type="flex">
+					<a href="#" @click="navToggle=false">
 						<font-awesome-icon icon="home" />Home
+					</a>
 				</el-row>
-				</a>
-				<a href="#about" @click="navToggle=false">
+
 				<el-row class="nav-row" type="flex">
+					<a href="#about" @click="navToggle=false">
 						<font-awesome-icon icon="user-alt" />About me
+					</a>
 				</el-row>
-				</a>
-				<a href="#skill" @click="navToggle=false">
 				<el-row class="nav-row" type="flex">
+					<a href="#skill" @click="navToggle=false">
 						<font-awesome-icon icon="tools" />My skills
+					</a>
 				</el-row>
-				</a>
-				<a href="#interest" @click="navToggle=false">
 				<el-row class="nav-row" type="flex">
+					<a href="#interest" @click="navToggle=false">
 						<font-awesome-icon icon="rocket" />Interests
+					</a>
 				</el-row>
-				</a>
-				<a href="#" @click="navToggle=false">
 				<el-row class="nav-row" type="flex">
+					<a href="#" @click="navToggle=false">
 						<font-awesome-icon icon="phone" />Contact me
+					</a>
 				</el-row>
-				</a>
 			</div>
 		</nav>
 		<section class="particle">
@@ -86,18 +87,18 @@
 
 			<div id="app-container">
 				<!-- break a line if the nav bar is extended for mobile view so it wont cover the header top -->
-			<div style="padding-top:120px;" v-if="navToggle"></div>
+				<div style="padding-top:120px;" v-if="navToggle"></div>
 				<header>
 					<h1 class="greet">Hello world !</h1>
 					<el-row type="flex" justify="center">
-						<img src="@/assets/3.jpeg" class="header-img" alt="gitam gadtaula" />
+						<img src="@/assets/3.jpeg" class="header-img" />
 					</el-row>
 					<el-row type="flex" justify="center">
 						<el-col :span="24">
-							<h1 class="header-h1" style="border:none;font-size:20px;">I'm Gitam Gadtaula</h1>
+							<h1 class="header-h1">I'm Gitam</h1>
 						</el-col>
 					</el-row>
-					<hr style="width:50%;"/>
+					<hr />
 					<el-row type="flex" justify="center">
 						<span style="color:#fff">
 							<typewriter
@@ -105,7 +106,7 @@
 								:full-erase="false"
 								:interval="300"
 								:words="[
-                  'Web developer..',
+                  'Software developer..',
                   'UI/UX designer..',
                   'Music Freak..',
                   'Football Maniac..'
@@ -116,44 +117,44 @@
 					</el-row>
 					<!-- Socail links -->
 					<el-row type="flex" justify="center" :gutter="24" style="margin-top:20px;">
-						<el-col class="social-icon">
+						<el-col :xl="2" :lg="2" :md="1">
 							<a href="https://fb.com/giittam">
-								<div class="social-ico">
+								<div class="social-icon">
 									<font-awesome-icon :icon="['fab', 'facebook-f']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col class="social-icon">
+						<el-col :xl="2" :lg="2" :md="1">
 							<a href="https://github.com/gitamgadtaula/">
-								<div class="social-ico">
+								<div class="social-icon">
 									<font-awesome-icon :icon="['fab', 'github']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col class="social-icon">
+						<el-col :xl="2" :lg="2" :md="1">
 							<a href="https://twitter.com/gitamgadtaula">
-								<div class="social-ico">
+								<div class="social-icon">
 									<font-awesome-icon :icon="['fab', 'twitter']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col class="social-icon">
+						<el-col :xl="2" :lg="2" :md="2">
 							<a href="https://instagram.com/gitamgadtaula">
-								<div class="social-ico">
+								<div class="social-icon">
 									<font-awesome-icon :icon="['fab', 'instagram']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col class="social-icon">
+						<el-col :xl="2" :lg="2" :md="2">
 							<a href="https://www.quora.com/profile/Gitam-Gadtaula">
-								<div class="social-ico">
+								<div class="social-icon">
 									<font-awesome-icon :icon="['fab', 'quora']" />
 								</div>
 							</a>
 						</el-col>
-						<el-col class="social-icon">
+						<el-col :xl="2" :lg="2" :md="2">
 							<a href="https://www.linkedin.com/in/gitamgadtaula/">
-								<div class="social-ico">
+								<div class="social-icon">
 									<font-awesome-icon :icon="['fab', 'linkedin-in']" />
 								</div>
 							</a>
@@ -165,88 +166,90 @@
 				</div>
 			</div>
 		</section>
-		<!-- div for curved border -->
-		<!-- <div style="background-color:#0;"> -->
+
+		<div style="background-color:black;">
 			<section class="main hidden-sm-and-down" id="about">
 				<el-row type="flex" justify="space-between" direction="column">
-					<el-col :span="9">
-						<img src="@/assets/me.jpeg" class="main-img" alt="gitam gadtaula" />
+					<el-col :span="9" class>
+						<img src="@/assets/me.jpeg" class="main-img" />
 					</el-col>
 					<el-col :span="15">
-						<h1 class="header-h1">About Myself</h1>
-						<!-- <h2 style="margin-top:10px;font-weight: 200;" class="cursive">
-							I'm gitam gadtaula.
-						</h2> -->
-							<p class="main-desc cursive">
+						<h1 class="header-h1" style="color:#111110; ">About Myself</h1>
+						<h2 style="margin-top:10px;font-weight: 200;">
+							I'm Gitam Gadtaula.
+							<p style="font-size:18px; font-weight:400;">
 								A simple, creative and a fun-loving person who likes to
 								create things out of imagination.
 							</p>
 
-							<p class="main-desc cursive">
-								{{aboutMe}}	
-								
+							<p style="font-size:18px; font-weight:400;padding-top:6px;">
+								I am just among any other sapiens who is strolling around with some purpose and
+								ambition in their life. But in the meantime I find
+								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
+								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports just to name a few. And when I look
+								at people I sometimes make myself try and feel them as more than just
+								a random person walking by. And Since these man made borders are merely a construct, I prefer 
+								to think myself as a citizen of this world . 
 							</p>
-						
+						</h2>
 					</el-col>
 				</el-row>
 			</section>
 
 			<section class="main hidden-md-and-up">
-				<!-- <div class="main-sm-header">
-				<h1 class="header-h1" style="font-size:22px;">About myself</h1>
-				</div> -->
-					
 				<el-row type="flex" justify="space-between" direction="column">
-					<el-col :span="10">
+					<el-col :span="4">
 						<img src="@/assets/me.jpeg" class="main-img" style="width:120px;border-radius:50%;" />
-					</el-col>
-					<el-col :span="14" style="margin-top:0px;">
-						<p class="main-desc cursive">
-								A simple, creative and a fun-loving person who likes to
-								create things out of imagination.
-							</p>
-						
 					</el-col>
 				</el-row>
 				<el-row>
-					<el-col :span="24">		
-							<p class="main-desc cursive">
-								{{aboutMe}}
+					<el-col :span="24">
+						<h1 class="header-h1" style="color:#111110;">About myself</h1>
+						<h2 style="margin-top:10px; font-weight: 200;">
+							I'm Gitam Gadtaula.
+							<p style="font-size:15px; font-weight:400;">
+								A simple, creative and a fun-loving person who likes to
+								create things out of imagination.
 							</p>
-						
+							<br />
+							<p style="font-size:15px; font-weight:400;">
+								I am just among any other sapiens who is strolling around with some purpose and
+								ambition in their life. But in the meantime I find
+								myself to be carefree because worry does not empty tomorrow of its sorrow but it empties today of its strength. 
+								I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports, just to name a few. And when I look
+								at people I sometimes make myself try and feel them as more than just
+								a random person walking by. And Since these man made borders are merely a construct, I prefer 
+								to think myself as a citizen of this world . 
+							</p>
+						</h2>
 					</el-col>
 				</el-row>
 			</section>
 
 			<section class="work">
-						<h1 class="header-h1" style="color:black;">
+				<el-row type="flex" justify="space-between">
+					<el-col :span="12" class="animated bounceInRight" style="text-align:left;">
+						<h1>
 							Education
 							<font-awesome-icon icon="university" />
-							
 						</h1>
 						<h3>
-							Computer Science
+							Computer science
 							<font-awesome-icon icon="graduation-cap" />
 						</h3>
 						<h2>Kathmandu University</h2>
-					<!-- </el-col> -->
-					<el-divider>
-						<el-col :span="3">
-							<i class="el-icon-star-off"></i>
-						</el-col>
-					</el-divider>
-					<!-- <el-col :span="12" class="animated bounceInLeft" style="text-align:right;"> -->
-						<h1 class="header-h1" style="color:black;" >
-						Profession <font-awesome-icon icon="industry" />
+					</el-col>
+
+					<el-col :span="12" class="animated bounceInLeft" style="text-align:right;">
+						<h1>
+							<font-awesome-icon icon="building" />&nbsp;Work
 						</h1>
 						<h3>
-							<font-awesome-icon icon="terminal" />&nbsp;Developer
+							<font-awesome-icon icon="terminal" />&nbsp;Software Developer
 						</h3>
-						<h2>Rasello Nepal </h2>
-					<!-- </el-col> -->
-				<!-- </el-row> -->
-
-
+						<h2>Rasello Nepal</h2>
+					</el-col>
+				</el-row>
 				<!-- <div class="block">
           <el-timeline>
             <el-timeline-item timestamp placement="top" style="color:white;">
@@ -281,7 +284,7 @@
           </el-timeline>
 				</div>-->
 			</section>
-		<!-- </div> -->
+		</div>
 		<section class="skill" id="skill">
 			<h1 class="header-h1">
 				MY SKILLS
@@ -290,26 +293,24 @@
 			<div style="margin-top:20px;color:white;">
 				<p class="skill-desc">
 					<!-- <i> -->
-						
-						I'm a fresh computer science graduate and a web developer by profession. I have been doing computer
-						programming since way back in school. 
-						For me, its another way of me expressing things and I am more than delighted 
-						to actually make a living out of it. I'm a progressive and a stoic learner. I like being acquainted with new technologies, 
-						solving problems, designing a responsive UI with a rich user experience, automating things on web and so on. I'm also 
-						a very keen enthusiast of Machine learning and Data science.
-						Listed below are my skills but just not limited to :
+						<!-- I am a fresh university graduate in computer science who has just kicked off his
+						career in Information technogly. Eventhough I'm a newbie in this
+						competetive field, the way I have shaped myself during my acadameic
+						spell and my internship later has me helped a lot to quickly grasp
+						the new things floating around the air. -->
+						I'm a fresh computer science graduate and a software developer by profession. I have been doing computer programming since back in 8th standard in school. 
+						For me, its another way of me expressing things and I am more than delighted to actually make a living out of it. I like being acquainted with new technologies, solving problems, automating things on web, and I'm also a very keen enthusiast of Machine learning and Data science.
+						My skills are listed below but are not only limited to :
 					<!-- </i> -->
 				</p>
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
 					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'html5']" class="skills-icon"/>
 						<p class="skill-name">HTML5</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:90%;"></div>
 						</div>
 					</el-col>
 					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'sass']" class="skills-icon"/>
 						<p class="skill-name">CSS3/Sass</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:90%;"></div>
@@ -318,14 +319,12 @@
 				</el-row>
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
 					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'js-square']" class="skills-icon"/>
 						<p class="skill-name">Javascript</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:75%;"></div>
 						</div>
 					</el-col>
 					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'php']" class="skills-icon"/>
 						<p class="skill-name">PHP</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:80%;"></div>
@@ -334,14 +333,12 @@
 				</el-row>
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
 					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'vuejs']" class="skills-icon"/>
 						<p class="skill-name">Vue js</p>
 						<div class="skill-container">
-							<div class="skill-container-child" style="width:75%;"></div>
+							<div class="skill-container-child" style="width:70%;"></div>
 						</div>
 					</el-col>
 					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'laravel']" class="skills-icon"/>
 						<p class="skill-name">Laravel</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:65%;"></div>
@@ -351,31 +348,12 @@
 
 				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
 					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'node-js']" class="skills-icon"/>
-						<p class="skill-name">Node JS</p>
-						<div class="skill-container">
-							<div class="skill-container-child" style="width:65%;"></div>
-						</div>
-					</el-col>
-					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'github']" class="skills-icon"/>
-						<p class="skill-name">Github</p>
-						<div class="skill-container">
-							<div class="skill-container-child" style="width:90%;"></div>
-						</div>
-					</el-col>
-				</el-row>
-
-				<el-row type="flex" justify="space-between" style="margin-bottom:10px;">
-					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'python']" class="skills-icon"/>
 						<p class="skill-name">Python</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:50%;"></div>
 						</div>
 					</el-col>
 					<el-col :span="11">
-						<font-awesome-icon :icon="['fab', 'adobe']" class="skills-icon"/>
 						<p class="skill-name">Photoshop</p>
 						<div class="skill-container">
 							<div class="skill-container-child" style="width:55%;"></div>
@@ -417,13 +395,11 @@
 				</carousel-3d>
 			</section>
 			<section class="footer" id="footer">
-				<h2 style="font-weight: 100" class="cursive"> Made with
+				Made with
 				<span style="color:red;">
-					<!-- <font-awesome-icon icon="heart" /> -->
-					❤️
+					<font-awesome-icon icon="heart" />
 				</span>
 				in Quarantine.
-				</h2>
 				<p>
 					<font-awesome-icon icon="envelope" />&nbsp;gitamgadtaula@gmail.com
 				</p>
@@ -474,24 +450,12 @@
 			rgb(30, 25, 66) 100%
 		);
 		border: none;
-		position: absolute;
-		
 	}
-	.c-desc {
-			font-size: 18px;
-			font-family: "Rajdhani", sans-serif;
-			padding: 5px;
-			padding-bottom: 80px;
-			position: relative; 
-			top: -12px;
-
-		}
 
 	@media only screen and (max-width: 580px) {
 		.c-desc {
-			font-size: 12px;
+			font-size: 14px;
 		}
-		
 	}
 </style>
 
@@ -500,22 +464,12 @@
 	const img1 = require("@/assets/football2.jpg");
 	const img2 = require("@/assets/guitar.jpg");
 	const img3 = require("@/assets/travel1.jpg");
-	// const img4 = require("@/assets/meme.jpg");
-	const about_myself = `I am just among any other sapiens who is strolling around with some purpose and
-						  ambition in their life. But in the meantime I find
-						  myself to be carefree because worry only empties today of its strength but does not empty tomorrow of its sorrow. 
-						  I enjoy nature, adventure, literature, art, humor, computers and technology, science, sports, music and whatnot.
-						  I'm a star gazer and I always prefer watching sunset over netflix. I love fantasies and science fiction. 
-						  I keep fantasizing myself in places god only know exists. And sometimes when I look
-						  at people I make myself try and feel them as more than just
-						  a random person walking by. `;
 
 	export default {
 		name: "App",
 		data() {
 			return {
 				navToggle: false,
-				aboutMe: about_myself,
 				assets: [
 					{
 						img: img1,
@@ -533,13 +487,8 @@
 						img: img3,
 						caption: "Travelling",
 						desc:
-							"Travelling helps open my mind and makes me realize that there's no one way to live life. By being exposed to new places, people and cultures, it helps me develop a wider world view."
+							"Travelling helps open my mind. You realize that there's no one way to live life. Meeting people from other places will show you that your world view isn't the same as everyone else's.  By being exposed to new places, people and cultures, it helps me develop a wider world view."
 					}
-					// {
-					// 	img: img4,
-					// 	caption: "Humor",
-					// 	desc : "Humor brings smile on the face even on the saddest souls. Humor makes people happy even if its momentary. I like humor, comics, jokes and memes.  I like creating memes sometimes to make fun out of my friends. It keeps me pyschologically happy and mentally active. "
-					// }
 				]
 			};
 		}
