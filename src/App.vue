@@ -107,14 +107,15 @@
           <el-row type="flex" justify="center">
             <span style="color:#fff">
               <typewriter
-                :speed="50"
+                :speed="1000"
                 :full-erase="false"
-                :interval="300"
+                :interval="1000"
                 :words="[
-                  'Software developer..',
-                  'UI/UX designer..',
+                  'Software Engineer..',
+                  'FrontEnd developer..',
                   'Music Freak..',
                   'Football Maniac..',
+                  'Tech Enthusiast..'
                 ]"
                 :cursor="false"
               ></typewriter
@@ -350,14 +351,14 @@
             <font-awesome-icon :icon="['fab', 'vuejs']" class="skills-icon" />
             <p class="skill-name">Vue js</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:75%;"></div>
+              <div class="skill-container-child" style="width:85%;"></div>
             </div>
           </el-col>
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'laravel']" class="skills-icon" />
             <p class="skill-name">Laravel</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:65%;"></div>
+              <div class="skill-container-child" style="width:75%;"></div>
             </div>
           </el-col>
         </el-row>
