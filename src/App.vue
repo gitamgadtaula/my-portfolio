@@ -90,26 +90,20 @@
         <header>
           <h1 class="greet">Hello world !</h1>
           <el-row type="flex" justify="center">
-            <img
-              src="@/assets/3.jpeg"
-              class="header-img"
-              alt="gitam gadtaula"
-            />
+            <img src="@/assets/3.jpeg" class="header-img" alt="gitam gadtaula" />
           </el-row>
           <el-row type="flex" justify="center">
             <el-col :span="24">
-              <h1 class="header-h1" style="border:none;font-size:20px;">
-                I'm Gitam Gadtaula
-              </h1>
+              <h1 class="header-h1" style="border:none;font-size:20px;">I'm Gitam Gadtaula</h1>
             </el-col>
           </el-row>
           <hr style="width:50%;" />
           <el-row type="flex" justify="center">
             <span style="color:#fff">
               <typewriter
-                :speed="1000"
+                :speed="60"
                 :full-erase="false"
-                :interval="1000"
+                :interval="500"
                 :words="[
                   'Software Engineer..',
                   'FrontEnd developer..',
@@ -118,17 +112,11 @@
                   'Tech Enthusiast..'
                 ]"
                 :cursor="false"
-              ></typewriter
-              >|
+              ></typewriter>|
             </span>
           </el-row>
           <!-- Socail links -->
-          <el-row
-            type="flex"
-            justify="center"
-            :gutter="24"
-            style="margin-top:20px;"
-          >
+          <el-row type="flex" justify="center" :gutter="24" style="margin-top:20px;">
             <el-col class="social-icon">
               <a href="https://fb.com/giittam">
                 <div class="social-ico">
@@ -189,15 +177,13 @@
           <h1 class="header-h1">About Myself</h1>
           <!-- <h2 style="margin-top:10px;font-weight: 200;" class="cursive">
 							I'm gitam gadtaula.
-						</h2> -->
+          </h2>-->
           <p class="main-desc cursive">
             A simple, creative and a fun-loving person who likes to create
             things out of imagination.
           </p>
 
-          <p class="main-desc cursive">
-            {{ aboutMe }}
-          </p>
+          <p class="main-desc cursive">{{ aboutMe }}</p>
         </el-col>
       </el-row>
     </section>
@@ -205,15 +191,11 @@
     <section class="main hidden-md-and-up">
       <!-- <div class="main-sm-header">
 				<h1 class="header-h1" style="font-size:22px;">About myself</h1>
-				</div> -->
+      </div>-->
 
       <el-row type="flex" justify="space-between" direction="column">
         <el-col :span="10">
-          <img
-            src="@/assets/me.jpeg"
-            class="main-img"
-            style="width:120px;border-radius:50%;"
-          />
+          <img src="@/assets/me.jpeg" class="main-img" style="width:120px;border-radius:50%;" />
         </el-col>
         <el-col :span="14" style="margin-top:0px;">
           <p class="main-desc cursive">
@@ -224,9 +206,7 @@
       </el-row>
       <el-row>
         <el-col :span="24">
-          <p class="main-desc cursive">
-            {{ aboutMe }}
-          </p>
+          <p class="main-desc cursive">{{ aboutMe }}</p>
         </el-col>
       </el-row>
     </section>
@@ -249,9 +229,12 @@
       </el-divider>
       <!-- <el-col :span="12" class="animated bounceInLeft" style="text-align:right;"> -->
       <h1 class="header-h1" style="color:black;">
-        Profession <font-awesome-icon icon="industry" />
+        Profession
+        <font-awesome-icon icon="industry" />
       </h1>
-      <h3><font-awesome-icon icon="terminal" />&nbsp;Software Developer</h3>
+      <h3>
+        <font-awesome-icon icon="terminal" />&nbsp;Software Developer
+      </h3>
       <h2>Rasello Nepal</h2>
       <!-- </el-col> -->
       <!-- </el-row> -->
@@ -288,7 +271,7 @@
             </el-timeline-item>
             <el-timeline></el-timeline>
           </el-timeline>
-				</div>-->
+      </div>-->
     </section>
     <!-- </div> -->
     <section class="skill" id="skill">
@@ -299,15 +282,19 @@
       <div style="margin-top:20px;color:white;">
         <p class="skill-desc">
           <!-- <i> -->
-
-          I'm a fresh computer science graduate and a software developer by
+          I'm a fresh computer science graduate and a junior software engineer by
           profession. I have been doing computer programming since way back in
           school. For me, its another way of me expressing things and I am more
           than delighted to actually make a living out of it. I'm a progressive
           and a stoic learner. I like being acquainted with new technologies,
           solving problems, designing responsive UI with a good user
-          experience, automating things on web and so on. I'm also a very keen
-          enthusiast of Machine learning and Data science. Listed below are my
+          experience, automating things on web and so on.
+          I'm also a very keen enthusiast of Machine learning and Data science.
+          <br />Honestly, most of the time I am not the smartest person in the room when
+          it is filled with Developers and I am totally okay with that.
+          What I lack in sheer intellect, I make up for in my willingness to absorb and
+          learn as much as I can from the others.
+          Listed below are some of my
           skills but just not limited to :
           <!-- </i> -->
         </p>
@@ -329,10 +316,7 @@
         </el-row>
         <el-row type="flex" justify="space-between" style="margin-bottom:10px;">
           <el-col :span="11">
-            <font-awesome-icon
-              :icon="['fab', 'js-square']"
-              class="skills-icon"
-            />
+            <font-awesome-icon :icon="['fab', 'js-square']" class="skills-icon" />
             <p class="skill-name">Javascript</p>
             <div class="skill-container">
               <div class="skill-container-child" style="width:75%;"></div>
@@ -444,12 +428,12 @@
         </p>
         <!-- <p>
 					<font-awesome-icon icon="briefcase" />&nbsp;gitam@rasello.com
-				</p> -->
-        <p><font-awesome-icon icon="map-marker-alt" />&nbsp;Kathmandu Nepal</p>
-        <div
-          style="max-width:50%;margin-left:auto;
-          margin-right:auto;display:block;"
-        >
+        </p>-->
+        <p>
+          <font-awesome-icon icon="map-marker-alt" />&nbsp;Kathmandu Nepal
+        </p>
+        <div style="max-width:50%;margin-left:auto;
+          margin-right:auto;display:block;">
           <el-divider>
             <el-col :span="3">
               <i class="el-icon-star-on"></i>
@@ -513,10 +497,10 @@ const img3 = require("@/assets/travel1.jpg");
 // const img4 = require("@/assets/meme.jpg");
 const about_myself = `I am just among any other sapiens who is strolling around with some purpose and
 						  ambition in their life. But in the meantime I find
-						  myself to be carefree because worry only empties today of its strength but does not empty tomorrow of its sorrow. 
+						  myself to be carefree because I've read somewhere that worry only empties today of its strength but does not empty tomorrow of its sorrow. 
 						  I enjoy nature, adventure, literature and philosophy, art, humor, technology, sports, music, science and whatnot.
 						  I'm a star gazer and I always prefer watching sunsets over netflix. I love fantasies and fiction. 
-						  I keep fantasizing myself in places god only know exists. And sometimes when I look
+						  Sometimes I keep fantasizing myself in places god only know exists. And sometimes when I look
 						  at people I make myself try and feel them as more than just
 						  a random person walking by. `;
 
