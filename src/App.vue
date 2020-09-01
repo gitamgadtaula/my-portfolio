@@ -356,8 +356,8 @@
             </div>
           </el-col>
           <el-col :span="11">
-            <font-awesome-icon :icon="['fab', 'github']" class="skills-icon" />
-            <p class="skill-name">Github</p>
+            <font-awesome-icon :icon="['fab', 'git-alt']" class="skills-icon" />
+            <p class="skill-name">Git</p>
             <div class="skill-container">
               <div class="skill-container-child" style="width:90%;"></div>
             </div>
