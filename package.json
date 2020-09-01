@@ -29,7 +29,7 @@
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
     "vue-particles": "^1.0.9",
-    "webpack": "^4.43.0"
+    "webpack": "^4.44.1"
   },
   "eslintConfig": {
     "root": true,

@@ -17,22 +17,22 @@
 
         <el-col :span="5">
           <a href="#about" class="nav-link">
-            <font-awesome-icon icon="user-alt" />&nbsp;About me
+            <font-awesome-icon icon="user-alt" />&nbsp; About me
           </a>
         </el-col>
         <el-col :span="5">
           <a href="#skill" class="nav-link">
-            <font-awesome-icon icon="tools" />&nbsp;My skills
+            <font-awesome-icon icon="tools" />&nbsp; My skills
           </a>
         </el-col>
         <el-col :span="5">
           <a href="#interest" class="nav-link">
-            <font-awesome-icon icon="rocket" />&nbsp;Interests
+            <font-awesome-icon icon="rocket" />&nbsp; Interests
           </a>
         </el-col>
         <el-col :span="5">
           <a href="#footer" class="nav-link">
-            <font-awesome-icon icon="phone" />&nbsp;Contact me
+            <font-awesome-icon icon="phone" />&nbsp; Contact me
           </a>
         </el-col>
       </el-row>
