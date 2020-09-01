@@ -11,13 +11,13 @@
         <el-col :span="5" :offset="5">
           <a href="#" class="nav-link">
             <font-awesome-icon icon="home" />
-            <span>&nbsp;Home&nbsp;</span>
+            <span>&nbsp; Home&nbsp;</span>
           </a>
         </el-col>
 
         <el-col :span="5">
           <a href="#about" class="nav-link">
-            <font-awesome-icon icon="user-alt" />&nbsp; About me
+            <font-awesome-icon icon="user-alt" />&nbsp;   About me
           </a>
         </el-col>
         <el-col :span="5">
@@ -56,33 +56,33 @@
       <div class="toggle" v-if="navToggle">
         <a href="#" @click="navToggle = false">
           <el-row class="nav-row" type="flex">
-            <font-awesome-icon icon="home" />Home
+            <font-awesome-icon icon="home" />&nbsp; Home
           </el-row>
         </a>
         <a href="#about" @click="navToggle = false">
           <el-row class="nav-row" type="flex">
-            <font-awesome-icon icon="user-alt" />About me
+            <font-awesome-icon icon="user-alt" />&nbsp; About me
           </el-row>
         </a>
         <a href="#skill" @click="navToggle = false">
           <el-row class="nav-row" type="flex">
-            <font-awesome-icon icon="tools" />My skills
+            <font-awesome-icon icon="tools" />&nbsp; My skills
           </el-row>
         </a>
         <a href="#interest" @click="navToggle = false">
           <el-row class="nav-row" type="flex">
-            <font-awesome-icon icon="rocket" />Interests
+            <font-awesome-icon icon="rocket" />&nbsp; Interests
           </el-row>
         </a>
-        <a href="#" @click="navToggle = false">
+        <a href="#footer" @click="navToggle = false">
           <el-row class="nav-row" type="flex">
-            <font-awesome-icon icon="phone" />Contact me
+            <font-awesome-icon icon="phone" />&nbsp; Contact me
           </el-row>
         </a>
       </div>
     </nav>
     <section class="particle">
-      <vue-particles color="#deaaae" shapeType="cirle"></vue-particles>
+      <vue-particles color="#deaaae" shapeType="circle" particleSize="4" clickMode="repulse"></vue-particles>
 
       <div id="app-container">
         <!-- break a line if the nav bar is extended for mobile view so it wont cover the header top -->
@@ -233,45 +233,9 @@
         <font-awesome-icon icon="industry" />
       </h1>
       <h3>
-        <font-awesome-icon icon="terminal" />&nbsp;Software Developer
+        <font-awesome-icon icon="terminal" />&nbsp;Software Engineer
       </h3>
       <h2>Rasello Nepal</h2>
-      <!-- </el-col> -->
-      <!-- </el-row> -->
-
-      <!-- <div class="block">
-          <el-timeline>
-            <el-timeline-item timestamp placement="top" style="color:white;">
-              <div class="bubble bubble-text">
-                <h3>
-                  Education
-                  <i class="fas fa-university"></i>
-                </h3>
-                <br />
-                <h4>
-                  <i class="fas fa-graduation-cap"></i>
-                  Kathmandu University
-                </h4>
-                <p style="margin-top:0px;">Computer Science</p>
-              </div>
-            </el-timeline-item>
-            <el-timeline-item timestamp placement="top" style="color:white;">
-              <div class="bubble bubble-text">
-                <h3>
-                  Work
-                  <i class="fas fa-university"></i>
-                </h3>
-                <br />
-                <h4>
-                  <i class="fas fa-terminal"></i>
-                  Web Developer
-                </h4>
-                <p style="margin-top:0px;">Rasello Nepal</p>
-              </div>
-            </el-timeline-item>
-            <el-timeline></el-timeline>
-          </el-timeline>
-      </div>-->
     </section>
     <!-- </div> -->
     <section class="skill" id="skill">
@@ -423,7 +387,7 @@
           </span>
           in Quarantine.
         </h2>
-        <p>
+        <p class>
           <font-awesome-icon icon="envelope" />&nbsp;gitamgadtaula@gmail.com
         </p>
         <!-- <p>
@@ -440,10 +404,8 @@
             </el-col>
           </el-divider>
         </div>
-        <h3 style="margin-bottom:10px;">Powered by</h3>
-        <img src="@/assets/logo.png" height="40" />
-        <img src="@/assets/nuxt.png" height="40" />
-        <img src="@/assets/element.svg" height="40" />
+        <!-- <h3 style="margin-bottom:10px;">Powered by</h3>
+        <img src="@/assets/logo.png" height="40" />-->
       </section>
     </div>
   </div>
