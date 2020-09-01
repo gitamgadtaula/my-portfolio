@@ -7,7 +7,7 @@ import "element-ui/lib/theme-chalk/display.css";
 
 // import "animate.css";
 import "./assets/style.css";
-import { Row, Col, Divider } from "element-ui";
+import { Row, Col, Divider} from "element-ui";
 // import ElementUI from "element-ui";
 import Carousel3d from "vue-carousel-3d";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -19,15 +19,17 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.use(Carousel3d);
 // Vue.use(ElementUI);
-Vue.use(Row)
-Vue.use(Col)
-Vue.use(Divider)
+Vue.use(Row);
+Vue.use(Col);
+Vue.use(Divider);
+// Vue.use(Carousel);
+// Vue.use(CarouselItem);
 Vue.use(Typewriter);
 Vue.use(VueParticles);
 
 // Vue.use(Row, Col, Divider);
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 
 new Vue({
   render: (h) => h(App),
