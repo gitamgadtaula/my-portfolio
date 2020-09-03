@@ -17,7 +17,7 @@
 
         <el-col :span="5">
           <a href="#about" class="nav-link">
-            <font-awesome-icon icon="user-alt" />&nbsp;   About me
+            <font-awesome-icon icon="user-alt" />&nbsp; About me
           </a>
         </el-col>
         <el-col :span="5">
@@ -31,7 +31,7 @@
           </a>
         </el-col>
         <el-col :span="5">
-          <a href="#footer" class="nav-link">
+          <a href="#contact" class="nav-link">
             <font-awesome-icon icon="phone" />&nbsp; Contact me
           </a>
         </el-col>
@@ -74,7 +74,7 @@
             <font-awesome-icon icon="rocket" />&nbsp; Interests
           </el-row>
         </a>
-        <a href="#footer" @click="navToggle = false">
+        <a href="#contact" @click="navToggle = false">
           <el-row class="nav-row" type="flex">
             <font-awesome-icon icon="phone" />&nbsp; Contact me
           </el-row>
@@ -82,7 +82,7 @@
       </div>
     </nav>
     <section class="particle">
-      <vue-particles color="#deaaae" shapeType="circle" particleSize="4" clickMode="repulse"></vue-particles>
+      <vue-particles color="#deaaae" shapeType="circle" clickMode="repulse"></vue-particles>
 
       <div id="app-container">
         <!-- break a line if the nav bar is extended for mobile view so it wont cover the header top -->
@@ -254,6 +254,8 @@
           solving problems, designing responsive UI with a good user
           experience, automating things on web and so on.
           I'm also a very keen enthusiast of Machine learning and Data science.
+          In addition to my knowledge base, I actively seek out new technologies and stay
+          up-to-date on industry trends and advancements to keep myself ahead of the curve.
           <br />Honestly, most of the time I am not the smartest person in the room when
           it is filled with Developers and I am totally okay with that.
           What I lack in sheer intellect, I make up for in my willingness to absorb and
@@ -371,6 +373,7 @@
                   onRight: rightIndex >= 0,
                 }"
                 :src="slide.img"
+                :alt="slide.alt"
               />
               <h3 class="c-caption">{{ slide.caption }}</h3>
               <h3 class="c-desc">{{ slide.desc }}</h3>
@@ -378,7 +381,7 @@
           </slide>
         </carousel-3d>
       </section>
-      <section class="footer" id="footer">
+      <section class="footer" id="contact">
         <h2 style="font-weight: 100" class="cursive">
           Made with
           <span style="color:red;">
@@ -460,8 +463,8 @@ const img3 = require("@/assets/travel1.jpg");
 const about_myself = `I am just among any other sapiens who is strolling around with some purpose and
 						  ambition in their life. But in the meantime I find
 						  myself to be carefree because I've read somewhere that worry only empties today of its strength but does not empty tomorrow of its sorrow. 
-						  I enjoy nature, adventure, literature and philosophy, art, humor, technology, sports, music, science and whatnot.
-						  I'm a star gazer and I always prefer watching sunsets over netflix. I love fantasies and fiction. 
+						  I enjoy nature, adventure, art, literature, philosophy, sports, music, science and whatnot.
+						  I'm a star gazer and I always prefer watching sunsets over Netflix. I love fantasies and fiction. 
 						  Sometimes I keep fantasizing myself in places god only know exists. And sometimes when I look
 						  at people I make myself try and feel them as more than just
 						  a random person walking by. `;
@@ -475,18 +478,21 @@ export default {
       assets: [
         {
           img: img1,
+          alt: "gitam gadtaula",
           caption: "Football",
           desc:
             "Football is not just another game, it's emotion. We don't have to speak or dress a certain way or even know the same language to communicate with another football fan or a player. It's a sport for the whole universe.",
         },
         {
           img: img2,
+          alt: "gitam gadtaula",
           caption: "Music",
           desc:
             "Music is far more than just a pleasant sound to the ear. I never find myself alone cause wherever I go music goes along with me. I love playing guitar, its therapeutic and releases a hepty amount of dopamine in my brains.",
         },
         {
           img: img3,
+          alt: "gitamgadtaula",
           caption: "Travelling",
           desc:
             "Travelling helps open my mind and makes me realize that there's no one way to live life. By being exposed to new places, people and cultures, it helps me develop a wider world view.",
