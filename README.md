@@ -1,6 +1,6 @@
 # Gitam Gadtaula Portfolio
 Hello this is my portfolio website. If you like it, you are free to clone it and experiment the changes in your own way. Enjoy !!
-Link : https://gitamgadtaula.herokuapp.com
+Link : https://gitamgadtaula.com.np
 
 ## Project setup
 ```
