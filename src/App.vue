@@ -1,7 +1,7 @@
 <template>
   <div id="app" v-cloak>
     <!-- navigation for larger screens -->
-    <nav style="width:100%;position:fixed;" class="hidden-sm-and-down">
+    <nav style="width: 100%; position: fixed" class="hidden-sm-and-down">
       <el-row type="flex" justify="space-evenly" :gutter="12">
         <el-col :span="1"></el-col>
         <span class="logo" float="left">
@@ -38,7 +38,7 @@
       </el-row>
     </nav>
     <!-- navigation for smaller screens -->
-    <nav style="width:100%;position:fixed;" class="hidden-md-and-up">
+    <nav style="width: 100%; position: fixed" class="hidden-md-and-up">
       <el-row type="flex" justify="space-between">
         <el-col :span="1">
           <span class="logo" float="left">
@@ -47,7 +47,7 @@
         </el-col>
         <el-col :span="4">
           <font-awesome-icon
-            style="color:white;font-size:32px;margin-right:8%;"
+            style="color: white; font-size: 32px; margin-right: 8%"
             icon="bars"
             @click="navToggle = !navToggle"
           />
@@ -82,24 +82,34 @@
       </div>
     </nav>
     <section class="particle">
-      <vue-particles color="#deaaae" shapeType="circle" clickMode="repulse"></vue-particles>
+      <vue-particles
+        color="#deaaae"
+        shapeType="circle"
+        clickMode="repulse"
+      ></vue-particles>
 
       <div id="app-container">
         <!-- break a line if the nav bar is extended for mobile view so it wont cover the header top -->
-        <div style="padding-top:120px;" v-if="navToggle"></div>
+        <div style="padding-top: 120px" v-if="navToggle"></div>
         <header>
           <h1 class="greet">Hello world !</h1>
           <el-row type="flex" justify="center">
-            <img src="@/assets/3.jpeg" class="header-img" alt="gitam gadtaula" />
+            <img
+              src="@/assets/3.jpeg"
+              class="header-img"
+              alt="gitam gadtaula"
+            />
           </el-row>
           <el-row type="flex" justify="center">
             <el-col :span="24">
-              <h1 class="header-h1" style="border:none;font-size:20px;">I'm Gitam Gadtaula</h1>
+              <h1 class="header-h1" style="border: none; font-size: 20px">
+                I'm Gitam Gadtaula
+              </h1>
             </el-col>
           </el-row>
-          <hr style="width:50%;" />
+          <hr style="width: 50%" />
           <el-row type="flex" justify="center">
-            <span style="color:#fff">
+            <span style="color: #fff">
               <typewriter
                 :speed="60"
                 :full-erase="false"
@@ -109,14 +119,20 @@
                   'FrontEnd developer..',
                   'Music Freak..',
                   'Football Maniac..',
-                  'Tech Enthusiast..'
+                  'Tech Enthusiast..',
                 ]"
                 :cursor="false"
-              ></typewriter>|
+              ></typewriter
+              >|
             </span>
           </el-row>
           <!-- Socail links -->
-          <el-row type="flex" justify="center" :gutter="24" style="margin-top:20px;">
+          <el-row
+            type="flex"
+            justify="center"
+            :gutter="24"
+            style="margin-top: 20px"
+          >
             <el-col class="social-icon">
               <a href="https://fb.com/giittam">
                 <div class="social-ico">
@@ -195,9 +211,13 @@
 
       <el-row type="flex" justify="space-between" direction="column">
         <el-col :span="10">
-          <img src="@/assets/me.jpeg" class="main-img" style="width:120px;border-radius:50%;" />
+          <img
+            src="@/assets/me.jpeg"
+            class="main-img"
+            style="width: 120px; border-radius: 50%"
+          />
         </el-col>
-        <el-col :span="14" style="margin-top:0px;">
+        <el-col :span="14" style="margin-top: 0px">
           <p class="main-desc cursive">
             A simple, creative and a fun-loving person who likes to create
             things out of imagination.
@@ -212,7 +232,7 @@
     </section>
 
     <section class="work">
-      <h1 class="header-h1" style="color:black;">
+      <h1 class="header-h1" style="color: black">
         Education
         <font-awesome-icon icon="university" />
       </h1>
@@ -228,13 +248,11 @@
         </el-col>
       </el-divider>
       <!-- <el-col :span="12" class="animated bounceInLeft" style="text-align:right;"> -->
-      <h1 class="header-h1" style="color:black;">
+      <h1 class="header-h1" style="color: black">
         Profession
         <font-awesome-icon icon="industry" />
       </h1>
-      <h3>
-        <font-awesome-icon icon="terminal" />&nbsp;Software Engineer
-      </h3>
+      <h3><font-awesome-icon icon="terminal" />&nbsp;Software Engineer</h3>
       <h2>Rasello Nepal</h2>
     </section>
     <!-- </div> -->
@@ -243,106 +261,129 @@
         MY SKILLS
         <font-awesome-icon icon="tools" />
       </h1>
-      <div style="margin-top:20px;color:white;">
+      <div style="margin-top: 20px; color: white">
         <p class="skill-desc">
           <!-- <i> -->
-          I'm a fresh computer science graduate and a junior software engineer by
-          profession. I have been doing computer programming since way back in
-          school. For me, its another way of me expressing things and I am more
-          than delighted to actually make a living out of it. I'm a progressive
-          and a stoic learner. I like being acquainted with new technologies,
-          solving problems, designing responsive UI with a good user
-          experience, automating things on web and so on.
-          I'm also a very keen enthusiast of Machine learning and Data science.
-          In addition to my knowledge base, I actively seek out new technologies and stay
-          up-to-date on industry trends and advancements to keep myself ahead of the curve.
-          <br />Honestly, most of the time I am not the smartest person in the room when
-          it is filled with Developers and I am totally okay with that.
-          What I lack in sheer intellect, I make up for in my willingness to absorb and
-          learn as much as I can from the others.
-          Listed below are some of my
-          skills but just not limited to :
+          I'm a fresh computer science graduate and a junior software engineer
+          by profession. I have been doing computer programming since way back
+          in school. For me, its another way of me expressing things and I am
+          more than delighted to actually make a living out of it. I'm a
+          progressive and a stoic learner. I like being acquainted with new
+          technologies, solving problems, designing responsive UI with a good
+          user experience, automating things on web and so on. I'm also a very
+          keen enthusiast of Machine learning and Data science. In addition to
+          my knowledge base, I actively seek out new technologies and stay
+          up-to-date on industry trends and advancements to keep myself ahead of
+          the curve.
+          <br />Honestly, most of the time I am not the smartest person in the
+          room when it is filled with Developers and I am totally okay with
+          that. What I lack in sheer intellect, I make up for in my willingness
+          to absorb and learn as much as I can from the others. Listed below are
+          some of my skills but just not limited to :
           <!-- </i> -->
         </p>
-        <el-row type="flex" justify="space-between" style="margin-bottom:10px;">
+        <el-row type="flex" justify="space-between" style="margin-bottom: 10px">
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'html5']" class="skills-icon" />
             <p class="skill-name">HTML5</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:90%;"></div>
+              <div class="skill-container-child" style="width: 90%"></div>
             </div>
           </el-col>
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'sass']" class="skills-icon" />
             <p class="skill-name">CSS3/Sass</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:90%;"></div>
+              <div class="skill-container-child" style="width: 90%"></div>
             </div>
           </el-col>
         </el-row>
-        <el-row type="flex" justify="space-between" style="margin-bottom:10px;">
+        <el-row type="flex" justify="space-between" style="margin-bottom: 10px">
           <el-col :span="11">
-            <font-awesome-icon :icon="['fab', 'js-square']" class="skills-icon" />
+            <font-awesome-icon
+              :icon="['fab', 'js-square']"
+              class="skills-icon"
+            />
             <p class="skill-name">Javascript</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:75%;"></div>
+              <div class="skill-container-child" style="width: 75%"></div>
             </div>
           </el-col>
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'php']" class="skills-icon" />
             <p class="skill-name">PHP</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:80%;"></div>
+              <div class="skill-container-child" style="width: 80%"></div>
             </div>
           </el-col>
         </el-row>
-        <el-row type="flex" justify="space-between" style="margin-bottom:10px;">
+        <el-row type="flex" justify="space-between" style="margin-bottom: 10px">
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'vuejs']" class="skills-icon" />
             <p class="skill-name">Vue js</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:85%;"></div>
+              <div class="skill-container-child" style="width: 85%"></div>
             </div>
           </el-col>
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'laravel']" class="skills-icon" />
             <p class="skill-name">Laravel</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:75%;"></div>
+              <div class="skill-container-child" style="width: 75%"></div>
             </div>
           </el-col>
         </el-row>
 
-        <el-row type="flex" justify="space-between" style="margin-bottom:10px;">
+        <el-row type="flex" justify="space-between" style="margin-bottom: 10px">
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'node-js']" class="skills-icon" />
             <p class="skill-name">Node JS</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:65%;"></div>
+              <div class="skill-container-child" style="width: 80%"></div>
             </div>
           </el-col>
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'git-alt']" class="skills-icon" />
             <p class="skill-name">Git</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:90%;"></div>
+              <div class="skill-container-child" style="width: 90%"></div>
             </div>
           </el-col>
         </el-row>
 
-        <el-row type="flex" justify="space-between" style="margin-bottom:10px;">
+        <el-row type="flex" justify="space-between" style="margin-bottom: 10px">
+          <el-col :span="11">
+            <font-awesome-icon :icon="['fas', 'mobile-alt']" class="skills-icon" />
+            <p class="skill-name">Flutter</p>
+            <div class="skill-container">
+              <div class="skill-container-child" style="width: 70%"></div>
+            </div>
+          </el-col>
+          <el-col :span="11">
+            <font-awesome-icon
+              :icon="['fas', 'database']"
+              class="skills-icon"
+            />
+            <p class="skill-name">Mongo DB</p>
+            <div class="skill-container">
+              <div class="skill-container-child" style="width: 70%"></div>
+            </div>
+          </el-col>
+        </el-row>
+
+        <el-row type="flex" justify="space-between" style="margin-bottom: 10px">
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'python']" class="skills-icon" />
             <p class="skill-name">Python</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:50%;"></div>
+              <div class="skill-container-child" style="width: 65%"></div>
             </div>
           </el-col>
           <el-col :span="11">
             <font-awesome-icon :icon="['fab', 'adobe']" class="skills-icon" />
             <p class="skill-name">Photoshop</p>
             <div class="skill-container">
-              <div class="skill-container-child" style="width:55%;"></div>
+              <div class="skill-container-child" style="width: 65%"></div>
             </div>
           </el-col>
         </el-row>
@@ -351,12 +392,12 @@
 
     <div style>
       <section class="interest" id="interest">
-        <h1 class="header-h1" style="margin-bottom:10px;">
+        <h1 class="header-h1" style="margin-bottom: 10px">
           MY INTERESTS
           <font-awesome-icon icon="rocket" />
         </h1>
         <carousel-3d
-          style="border:none;"
+          style="border: none"
           :width="620"
           :height="560"
           :autoplay="true"
@@ -384,7 +425,7 @@
       <section class="footer" id="contact">
         <h2 style="font-weight: 100" class="cursive">
           Made with
-          <span style="color:red;">
+          <span style="color: red">
             <!-- <font-awesome-icon icon="heart" /> -->
             ❤️
           </span>
@@ -396,11 +437,15 @@
         <!-- <p>
 					<font-awesome-icon icon="briefcase" />&nbsp;gitam@rasello.com
         </p>-->
-        <p>
-          <font-awesome-icon icon="map-marker-alt" />&nbsp;Kathmandu Nepal
-        </p>
-        <div style="max-width:50%;margin-left:auto;
-          margin-right:auto;display:block;">
+        <p><font-awesome-icon icon="map-marker-alt" />&nbsp;Kathmandu Nepal</p>
+        <div
+          style="
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          "
+        >
           <el-divider>
             <el-col :span="3">
               <i class="el-icon-star-on"></i>

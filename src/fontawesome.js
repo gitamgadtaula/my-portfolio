@@ -17,6 +17,8 @@ import {
   faUniversity,
   faGraduationCap,
   faBars,
+  faDatabase,
+  faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -65,5 +67,7 @@ library.add(
   faNodeJs,
   faGitAlt,
   faPython,
-  faAdobe
+  faAdobe,
+  faDatabase,
+  faMobileAlt
 );
