@@ -98,6 +98,7 @@
               src="@/assets/3.jpeg"
               class="header-img"
               alt="gitam gadtaula"
+              v-view="viewHandler"
             />
           </el-row>
           <el-row type="flex" justify="center">
@@ -262,7 +263,7 @@
         <font-awesome-icon icon="tools" />
       </h1>
       <div style="margin-top: 20px; color: white">
-        <p class="skill-desc">
+        <p class="skill-desc" v-view="viewHandler">
           <!-- <i> -->
           I'm a fresh computer science graduate and a junior software engineer
           by profession. I have been doing computer programming since way back
@@ -353,7 +354,10 @@
 
         <el-row type="flex" justify="space-between" style="margin-bottom: 10px">
           <el-col :span="11">
-            <font-awesome-icon :icon="['fas', 'mobile-alt']" class="skills-icon" />
+            <font-awesome-icon
+              :icon="['fas', 'mobile-alt']"
+              class="skills-icon"
+            />
             <p class="skill-name">Flutter</p>
             <div class="skill-container">
               <div class="skill-container-child" style="width: 70%"></div>
@@ -518,6 +522,7 @@ export default {
   name: "App",
   data() {
     return {
+      animateClass: "",
       navToggle: false,
       aboutMe: about_myself,
       assets: [
@@ -549,6 +554,13 @@ export default {
         // }
       ],
     };
+  },
+  methods: {
+    viewHandler(e) {
+      if (e.type == "enter") {
+        this.animateClass = "animate-fadeIn";
+      }
+    },
   },
 };
 </script>

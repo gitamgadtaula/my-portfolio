@@ -63,12 +63,12 @@ nav {
   top: 0;
   left: 0;
   z-index: 10;
-    background: linear-gradient(
-      90deg,
-      rgb(37, 25, 64) 0%,
-      rgb(42, 11, 53) 50%,
-      rgb(30, 25, 66) 100%
-    );
+  background: linear-gradient(
+    90deg,
+    rgb(37, 25, 64) 0%,
+    rgb(42, 11, 53) 50%,
+    rgb(30, 25, 66) 100%
+  );
 }
 header {
   margin-top: 140px;
@@ -292,6 +292,15 @@ header {
   text-align: justify;
   font-weight: 400;
   opacity: 1;
+  /* animation: fadeIn 1s; */
+}
+.view-in {
+  animation: fadeIn 1s;
+}
+.hidden {
+  display: none;
+}
+.animate-fadeIn {
   animation: fadeIn 1s;
 }
 @keyframes fadeIn {
