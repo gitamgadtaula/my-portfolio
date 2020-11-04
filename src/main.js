@@ -6,7 +6,7 @@ import "element-ui/lib/theme-chalk/index.css";
 import "element-ui/lib/theme-chalk/display.css";
 
 //check if the element is in viewport
-import checkView from 'vue-check-view'
+// import checkView from 'vue-check-view'
 
 // import "animate.css";
 import "./assets/style.css";
@@ -15,7 +15,7 @@ import './fontawesome.js'
 // import ElementUI from "element-ui";
 import Carousel3d from "vue-carousel-3d";
 
-Vue.use(checkView)
+// Vue.use(checkView)
 Vue.use(Carousel3d);
 // Vue.use(ElementUI);
 Vue.use(Row);

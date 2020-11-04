@@ -98,7 +98,6 @@
               src="@/assets/3.jpeg"
               class="header-img"
               alt="gitam gadtaula"
-              v-view="viewHandler"
             />
           </el-row>
           <el-row type="flex" justify="center">
@@ -263,7 +262,7 @@
         <font-awesome-icon icon="tools" />
       </h1>
       <div style="margin-top: 20px; color: white">
-        <p class="skill-desc" v-view="viewHandler">
+        <p class="skill-desc">
           <!-- <i> -->
           I'm a fresh computer science graduate and a junior software engineer
           by profession. I have been doing computer programming since way back
@@ -556,11 +555,11 @@ export default {
     };
   },
   methods: {
-    viewHandler(e) {
-      if (e.type == "enter") {
-        this.animateClass = "animate-fadeIn";
-      }
-    },
+    // viewHandler(e) {
+    //   if (e.type == "enter") {
+    //     this.animateClass = "animate-fadeIn";
+    //   }
+    // },
   },
 };
 </script>
